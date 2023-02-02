@@ -1,0 +1,11 @@
+﻿@{
+	Layout = "_LayoutLogs";
+}
+<div class="flex width-2">
+	@{
+		foreach (string log in Model)
+		{
+			<h6>@log</h6>
+		}
+	}
+</div>

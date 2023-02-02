@@ -1,0 +1,28 @@
+﻿@model WebApplication5.Models.LoginModel
+@{
+    @*ViewData["Title"] = "Home Page";*@
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="~/css/style.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<form id="signin" asp-action="Login" asp-controller="Account" asp-anti-forgery="true">
+			<div class="validation" asp-validation-summary="ModelOnly"></div>
+			<input type="text" asp-for="Email" name="Email" value="" id="Email" placeholder="username" />
+			<span asp-validation-for="Email" />
+			<input asp-for="Password" type="password" name="Password" value="" id="Password" placeholder="password" />
+			<span asp-validation-for="Password" />
+			<button type="submit">&#xf0da;</button>
+		</form>
+	</div>
+
+
+</body>
+</html>

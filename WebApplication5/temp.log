@@ -1,0 +1,3 @@
+17:15:04 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+17:15:04 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+17:15:04 Gateway     Connected

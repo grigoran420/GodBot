@@ -1,0 +1,6 @@
+02:18:12 Discord     Discord.Net v3.9.0 (API v10)
+02:18:12 Gateway     Connecting
+02:18:15 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:18:15 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:18:15 Gateway     Connected
+02:18:16 Gateway     Ready

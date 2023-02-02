@@ -1,0 +1,12 @@
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\bin\Release\net6.0\GodBot.deps.json
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\bin\Release\net6.0\GodBot.dll
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\bin\Release\net6.0\GodBot.pdb
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\obj\Release\net6.0\GodBot.csproj.AssemblyReference.cache
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\obj\Release\net6.0\GodBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\obj\Release\net6.0\GodBot.AssemblyInfoInputs.cache
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\obj\Release\net6.0\GodBot.AssemblyInfo.cs
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\obj\Release\net6.0\GodBot.csproj.CoreCompileInputs.cache
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\obj\Release\net6.0\GodBot.dll
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\obj\Release\net6.0\refint\GodBot.dll
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\obj\Release\net6.0\GodBot.pdb
+C:\Users\Юрий\source\repos\WebApplication5\GodBot\obj\Release\net6.0\ref\GodBot.dll

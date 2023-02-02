@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "owpgB0B0ktZ0ZNWJuijKGPqzrp5k+N1Oi+mRe6TYXTd9w500+tqdplAU2OWfVYPHtbtTNelHwuo1NbC/JQS3rg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Юрий\\source\\repos\\WebApplication5\\GodBot\\GodBot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Юрий\\.nuget\\packages\\discord.net\\3.9.0\\discord.net.3.9.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\discord.net.commands\\3.9.0\\discord.net.commands.3.9.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\discord.net.core\\3.9.0\\discord.net.core.3.9.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\discord.net.interactions\\3.9.0\\discord.net.interactions.3.9.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\discord.net.rest\\3.9.0\\discord.net.rest.3.9.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\discord.net.webhook\\3.9.0\\discord.net.webhook.3.9.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\discord.net.websocket\\3.9.0\\discord.net.websocket.3.9.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\system.interactive.async\\5.0.0\\system.interactive.async.5.0.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\system.linq.async\\5.0.0\\system.linq.async.5.0.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\system.text.json\\7.0.1\\system.text.json.7.0.1.nupkg.sha512",
+    "C:\\Users\\Юрий\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

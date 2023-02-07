@@ -1,8 +1,121 @@
-﻿
+﻿@model List<GodBot.Models.userModel>
 @{
+    Layout = "_LayoutReboot";
 }
-<div class="flex width-2">
-    <h1>Ну игра ещё в стадии разработки</h1>
+<div class="flex ">
+    @{
+        @foreach (GodBot.Models.userModel user in Model)
+        {
+            <div class="gridContainer-1cF_Ic" style="background: #2F3136">
+                <div class="grid-1aWVsE hasThumbnail-388RMe">
+                    <div class="embedTitle-2n1pEb embedMargin-2PsaQ4">
+                        <strong>Игровая карточка участника </strong>
+                        <code class="inline">@user.Name</code>
+                    </div>
+                    <div class="embedFields-2yHGHT">
+                        <div class="embedField-2kda1Q" style="grid-column: 1 / 13;">
+                            <div class="embedFieldName-9LYSyR">
+                                <strong>Steam:</strong>
+                            </div>
+                            <div class="embedFieldValue-3EHtvR">
+                                <code class="inline">@user.Steam</code>
+                            </div>
+                        </div>
+                        <div class="embedField-2kda1Q" style="grid-column: 1 / 7;">
+                            <div class="embedFieldName-9LYSyR">
+                                <strong>EpicGames:</strong>
+                            </div>
+                            <div class="embedFieldValue-3EHtvR">
+                                <code class="inline">@user.Epic</code>
+                            </div>
+                        </div>
+                        <div class="embedField-2kda1Q" style="grid-column: 7 / 13;">
+                            <div class="embedFieldName-9LYSyR">
+                                <strong>Origin:</strong>
+                            </div>
+                            <div class="embedFieldValue-3EHtvR">
+                                <code class="inline">@user.Origin</code>
+                            </div>
+                        </div>
+                        <div class="embedField-2kda1Q" style="grid-column: 1 / 13;">
+                            <div class="embedFieldName-9LYSyR">
+                                <strong>XBox:</strong>
+                            </div>
+                            <div class="embedFieldValue-3EHtvR">
+                                <code class="inline">@user.Xbox</code>
+                            </div>
+                        </div>
+                        <div class="embedField-2kda1Q" style="grid-column: 1 / 13;">
+                            <div class="embedFieldName-9LYSyR">
+                                <strong>Genshin Impact:</strong>
+                            </div>
+                            <div class="embedFieldValue-3EHtvR">
+                                <code class="inline">@user.Genshin</code>
+                            </div>
+                        </div>
+                        <div class="embedField-2kda1Q" style="grid-column: 1 / 13;">
+                            <div class="embedFieldName-9LYSyR">
+                                <strong>Osu!:</strong>
+                            </div>
+                            <div class="embedFieldValue-3EHtvR">
+                                <code class="inline">@user.Osu</code>
+                            </div>
+                        </div>
+                        <div class="embedField-2kda1Q" style="grid-column: 1 / 13;">
+                            <div class="embedFieldName-9LYSyR">
+                                <strong>Social Club (Rockstar Games):</strong>
+                            </div>
+                            <div class="embedFieldValue-3EHtvR">
+                                <code class="inline">@user.Social</code>
+                            </div>
+                        </div>
+                        <div class="embedField-2kda1Q" style="grid-column: 1 / 13;">
+                            <div class="embedFieldName-9LYSyR">
+                                <strong>Wargaming:</strong>
+                            </div>
+                            <div class="embedFieldValue-3EHtvR">
+                                <code class="inline">@user.Wargaming</code>
+                            </div>
+                        </div>
+                        <div class="embedField-2kda1Q" style="grid-column: 1 / 13;">
+                            <div class="embedFieldName-9LYSyR">
+                                <strong>Что нравится в играх/Жанры, которые интересуют:</strong>
+                            </div>
+                            <div class="embedFieldValue-3EHtvR">
+                                <em>@user.ganres</em>
+                            </div>
+                        </div>
+                        <div class="embedField-2kda1Q" style="grid-column: 1 / 13;">
+                            <div class="embedFieldName-9LYSyR">
+                                <strong>Любимые игры:</strong>
+                            </div>
+                            <div class="embedFieldValue-3EHtvR">
+                                <code class="">
+                                    <span class="hljs-string">@user.Games</span>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imageContent-3Av-9c embedThumbnail-2nTasl">
+                        <div class="imageContainer-10XenG">
+                            <div class="imageWrapper-oMkQl4 imageZoom-3yLCXY clickable-LksVCf" style="width: 80px; height: 80px;">
+                                <a tabindex="-1" aria-hidden="true" class="originalLink-Azwuo9" href="https://probot.media/FvRen5nF9C.png" data-role="img"></a>
+                                <div class="clickableWrapper-2WTAkL" tabindex="0" aria-label="Изображение" aria-describedby="uid_7" role="button">
+                                    <img alt="Изображение" src="@user.userAutarUrl;height=80" style="width: 80px; height: 80px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @using (Html.BeginForm("Tickets", "Home", FormMethod.Post))
+            {
+                <button name="action" value="accept{@user.Id}" type="submit" class="btn width-auto btn-success">accept</button>
+                <button name="action" value="reject{@user.Id}" type="submit" class="btn width-auto btn-danger">reject</button>
+
+            }
+            @*<h1>Ну игра ещё в стадии разработки</h1>
     <iframe width="1024" height="720" autoplay src="https://www.youtube.com/embed/gQX4duVLXCU">
-    </iframe>
+    </iframe>*@}
+}
 </div>

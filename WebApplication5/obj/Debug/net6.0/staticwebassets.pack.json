@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\css\\DiscordStyle.css"
     },
     {
+      "Id": "C:\\Users\\Юрий\\source\\repos\\WebApplication5\\WebApplication5\\wwwroot\\css\\Embed.css",
+      "PackagePath": "staticwebassets\\css\\Embed.css"
+    },
+    {
       "Id": "C:\\Users\\Юрий\\source\\repos\\WebApplication5\\WebApplication5\\wwwroot\\css\\bootstrap-4.0.0.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-4.0.0.css"
     },

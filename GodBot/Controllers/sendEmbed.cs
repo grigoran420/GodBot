@@ -60,12 +60,17 @@ namespace GodBot
 			foreach (var x in filds)
 			{
 				if (x.fildName != null & x.fildText != null) 
-				{ 
-					builder.AddField(x.fildName, x.fildText, x.fildInline); continue;
+				{
+					if (x.fildName.Replace(" ", "") != "" & x.fildText.Replace(" ", "") != "")
+					{
+						builder.AddField(x.fildName, x.fildText, x.fildInline);
+						continue;
+					}
 				}
 			}
 
-			Action._client.GetGuild(791600213424603146 /*id гильдиии куда отправляется сообщение*/).GetTextChannel(EmbedModel.ChannelId).SendMessageAsync(embed: builder.Build());
+			Action._client.GetGuild(805711346620432384 /*id гильдиии куда отправляется сообщение*/).GetTextChannel(EmbedModel.ChannelId).SendMessageAsync(embed: builder.Build());
+			//Action._client.GetGuild(791600213424603146 /*id гильдиии куда отправляется сообщение*/).GetTextChannel(EmbedModel.ChannelId).SendMessageAsync(embed: builder.Build());
 
 		}
 

@@ -2,6 +2,9 @@ C:\Users\Юрий\source\repos\WebApplication5\WebApplication5\obj\Release\net6.
 C:\Users\Юрий\source\repos\WebApplication5\WebApplication5\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
 C:\Users\Юрий\source\repos\WebApplication5\WebApplication5\obj\Release\net6.0\PubTmp\Out\appsettings.json
 C:\Users\Юрий\source\repos\WebApplication5\WebApplication5\obj\Release\net6.0\PubTmp\Out\libman.json
+C:\Users\Юрий\source\repos\WebApplication5\WebApplication5\obj\Release\net6.0\PubTmp\Out\temp.json
+C:\Users\Юрий\source\repos\WebApplication5\WebApplication5\obj\Release\net6.0\PubTmp\Out\users\344864166923730945.json
+C:\Users\Юрий\source\repos\WebApplication5\WebApplication5\obj\Release\net6.0\PubTmp\Out\users\491487830862987266.json
 C:\Users\Юрий\source\repos\WebApplication5\WebApplication5\obj\Release\net6.0\PubTmp\Out\WebApplication5.dll
 C:\Users\Юрий\source\repos\WebApplication5\WebApplication5\obj\Release\net6.0\PubTmp\Out\WebApplication5.deps.json
 C:\Users\Юрий\source\repos\WebApplication5\WebApplication5\obj\Release\net6.0\PubTmp\Out\WebApplication5.runtimeconfig.json

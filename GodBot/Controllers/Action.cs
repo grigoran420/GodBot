@@ -22,20 +22,21 @@ namespace GodBot
 
 			//  You can assign your bot token to a string, and pass that in to connect.
 			//  This is, however, insecure, particularly if you plan to have your code hosted in a public repository.
-			var token = "token";//токе бота 
+			//var token = "token";//токе бота 
+            var token = "token";//токе бота 
 
-			// Some alternative options would be to keep your token in an Environment Variable or a standalone file.
-			// var token = Environment.GetEnvironmentVariable("NameOfYourEnvironmentVariable");
-			// var token = File.ReadAllText("token.txt");
-			// var token = JsonConvert.DeserializeObject<AConfigurationClass>(File.ReadAllText("config.json")).Token;
-			
-			await _client.LoginAsync(TokenType.Bot, token);
+            // Some alternative options would be to keep your token in an Environment Variable or a standalone file.
+            // var token = Environment.GetEnvironmentVariable("NameOfYourEnvironmentVariable");
+            // var token = File.ReadAllText("token.txt");
+            // var token = JsonConvert.DeserializeObject<AConfigurationClass>(File.ReadAllText("config.json")).Token;
+
+            await _client.LoginAsync(TokenType.Bot, token);
 			await _client.StartAsync();
             _client.ButtonExecuted += ButtonHandler;
             _client.ButtonExecuted += NewMember.VerificationButton;
-            _client.Ready += Client_Ready;
+            //_client.Ready += Client_Ready;
 			_client.Ready += NewMember.VerificationHandler;
-            _client.SlashCommandExecuted += SlashCommandHandler;
+            //_client.SlashCommandExecuted += SlashCommandHandler;
             _client.SlashCommandExecuted += NewMember.SlashCommandHandler;
 			_client.ModalSubmitted += NewMember.VerifiedModal;
             /*var builderbutton = new ComponentBuilder()

@@ -7,7 +7,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAALIFThKjVRU+oolzphaMh4AAAAAACAAAAAAAQZgAAAAEAACAAAAC5MUTKcA4AP3nCQw8lg/jHlC4pjWcVVi8gfMcQJJ+iRgAAAAAOgAAAAAIAACAAAABZdQcIl6ouqTHw6yTtgutkGPpn7tlaAftBTs11GLUJ3SAAAAAK5crEni6PfRDPjEZ6j7EpDVrFUKrZSNieCD8jJhooKUAAAAAZmVLXg9tIlTZKeDM3foFS35x8H+DNNm18u0O0LR0guczWWqm7UW5Wox9XielxnYUdU1E3EglGEnIv8zMiyOBZ</EncryptedPassword>
     <_PublishTargetUrl>ftp://win5008.site4now.net/cgpbot</_PublishTargetUrl>
-    <History>True|2023-01-17T14:37:04.4616678Z;True|2023-01-17T01:04:21.8951513+03:00;False|2023-01-17T00:59:03.0249209+03:00;True|2023-01-14T03:22:05.1552528+03:00;True|2023-01-13T18:17:27.1264399+03:00;True|2023-01-13T17:53:47.1158845+03:00;</History>
+    <History>False|2023-02-07T17:25:55.0804644Z;True|2023-01-17T17:37:04.4616678+03:00;True|2023-01-17T01:04:21.8951513+03:00;False|2023-01-17T00:59:03.0249209+03:00;True|2023-01-14T03:22:05.1552528+03:00;True|2023-01-13T18:17:27.1264399+03:00;True|2023-01-13T17:53:47.1158845+03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -90,7 +90,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Discord.Net.Commands.dll">
-      <publishTime>12/23/2022 18:28:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Discord.Net.Core.dll">
       <publishTime>12/23/2022 18:27:38</publishTime>
@@ -183,10 +183,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="GodBot.dll">
-      <publishTime>01/17/2023 17:03:00</publishTime>
+      <publishTime>02/07/2023 20:14:34</publishTime>
     </File>
     <File Include="GodBot.pdb">
-      <publishTime>01/17/2023 17:03:00</publishTime>
+      <publishTime>02/07/2023 20:14:34</publishTime>
     </File>
     <File Include="Humanizer.dll">
       <publishTime>06/02/2020 16:07:58</publishTime>
@@ -315,16 +315,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/01/2022 07:16:52</publishTime>
     </File>
     <File Include="Microsoft.AspNetCore.Cryptography.Internal.dll">
-      <publishTime>12/01/2022 07:16:26</publishTime>
+      <publishTime>01/12/2022 07:16:26</publishTime>
     </File>
     <File Include="Microsoft.AspNetCore.Cryptography.KeyDerivation.dll">
-      <publishTime>12/01/2022 07:16:56</publishTime>
+      <publishTime>01/12/2022 07:16:56</publishTime>
     </File>
     <File Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll">
       <publishTime>12/01/2022 07:17:10</publishTime>
     </File>
     <File Include="Microsoft.AspNetCore.Identity.UI.dll">
-      <publishTime>12/01/2022 07:18:18</publishTime>
+      <publishTime>01/12/2022 07:18:18</publishTime>
     </File>
     <File Include="Microsoft.AspNetCore.Razor.Language.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -408,13 +408,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/26/2022 20:42:22</publishTime>
     </File>
     <File Include="Microsoft.Extensions.FileProviders.Embedded.dll">
-      <publishTime>12/01/2022 07:16:38</publishTime>
+      <publishTime>01/12/2022 07:16:38</publishTime>
     </File>
     <File Include="Microsoft.Extensions.Identity.Core.dll">
-      <publishTime>12/01/2022 07:16:56</publishTime>
+      <publishTime>01/12/2022 07:16:56</publishTime>
     </File>
     <File Include="Microsoft.Extensions.Identity.Stores.dll">
-      <publishTime>12/01/2022 07:16:56</publishTime>
+      <publishTime>01/12/2022 07:16:56</publishTime>
     </File>
     <File Include="Microsoft.Identity.Client.dll">
       <publishTime>10/20/2020 00:51:12</publishTime>
@@ -678,13 +678,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/13/2020 03:20:12</publishTime>
     </File>
     <File Include="System.Interactive.Async.dll">
-      <publishTime>11/10/2020 18:53:32</publishTime>
+      <publishTime>10/11/2020 18:53:32</publishTime>
     </File>
     <File Include="System.Linq.Async.dll">
-      <publishTime>11/10/2020 18:53:32</publishTime>
+      <publishTime>10/11/2020 18:53:32</publishTime>
     </File>
     <File Include="System.Reactive.dll">
-      <publishTime>11/10/2020 19:22:52</publishTime>
+      <publishTime>10/11/2020 19:22:52</publishTime>
     </File>
     <File Include="System.Reflection.MetadataLoadContext.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -706,6 +706,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="System.Windows.Extensions.dll">
       <publishTime>11/15/2019 11:56:52</publishTime>
+    </File>
+    <File Include="temp.json">
+      <publishTime>02/07/2023 19:00:06</publishTime>
     </File>
     <File Include="tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -743,29 +746,38 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="tr/Microsoft.CodeAnalysis.Workspaces.resources.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
+    <File Include="users/344864166923730945.json">
+      <publishTime>02/07/2023 19:29:08</publishTime>
+    </File>
+    <File Include="users/491487830862987266.json">
+      <publishTime>02/07/2023 19:38:47</publishTime>
+    </File>
     <File Include="web.config">
-      <publishTime>01/17/2023 17:03:13</publishTime>
+      <publishTime>02/07/2023 20:14:49</publishTime>
     </File>
     <File Include="WebApplication5.deps.json">
-      <publishTime>01/17/2023 17:03:04</publishTime>
+      <publishTime>02/07/2023 20:14:41</publishTime>
     </File>
     <File Include="WebApplication5.dll">
-      <publishTime>01/17/2023 17:03:03</publishTime>
+      <publishTime>02/07/2023 20:14:40</publishTime>
     </File>
     <File Include="WebApplication5.exe">
-      <publishTime>01/17/2023 17:03:03</publishTime>
+      <publishTime>02/07/2023 20:14:40</publishTime>
     </File>
     <File Include="WebApplication5.pdb">
-      <publishTime>01/17/2023 17:03:03</publishTime>
+      <publishTime>02/07/2023 20:14:40</publishTime>
     </File>
     <File Include="WebApplication5.runtimeconfig.json">
-      <publishTime>01/17/2023 17:03:04</publishTime>
+      <publishTime>02/07/2023 20:14:41</publishTime>
     </File>
     <File Include="wwwroot/css/bootstrap-4.0.0.css">
       <publishTime>01/11/2023 15:51:21</publishTime>
     </File>
     <File Include="wwwroot/css/DiscordStyle.css">
-      <publishTime>01/11/2023 13:22:54</publishTime>
+      <publishTime>02/07/2023 15:13:27</publishTime>
+    </File>
+    <File Include="wwwroot/css/Embed.css">
+      <publishTime>02/07/2023 15:02:38</publishTime>
     </File>
     <File Include="wwwroot/css/singlePageTemplate.css">
       <publishTime>01/17/2023 16:57:19</publishTime>
@@ -780,184 +792,184 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/10/2023 23:05:44</publishTime>
     </File>
     <File Include="wwwroot/Identity/css/site.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/favicon.ico">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/js/site.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.min.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.rtl.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-utilities.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-utilities.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-utilities.min.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.min.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.min.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.rtl.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.rtl.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.rtl.min.css">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.bundle.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.esm.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.esm.js.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.esm.min.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.esm.min.js.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.js.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.min.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/dist/js/bootstrap.min.js.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/bootstrap/LICENSE">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery-validation-unobtrusive/LICENSE.txt">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery-validation/dist/additional-methods.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery-validation/dist/additional-methods.min.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery-validation/dist/jquery.validate.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery-validation/dist/jquery.validate.min.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery-validation/LICENSE.md">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery/dist/jquery.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery/dist/jquery.min.js">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery/dist/jquery.min.map">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/Identity/lib/jquery/LICENSE.txt">
-      <publishTime>12/01/2022 07:06:20</publishTime>
+      <publishTime>01/12/2022 07:06:20</publishTime>
     </File>
     <File Include="wwwroot/images/placeholder.jpg">
       <publishTime>09/21/2018 01:43:44</publishTime>
@@ -1023,7 +1035,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/10/2023 23:05:44</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css">
-      <publishTime>01/10/2023 23:05:44</publishTime>
+      <publishTime>10/01/2023 23:05:44</publishTime>
     </File>
     <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map">
       <publishTime>01/10/2023 23:05:44</publishTime>

@@ -9,6 +9,15 @@ using System.Drawing;
 using System.ComponentModel;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using EmbedViewModel = WebApplication5.Models.EmbedViewModel;
+using UserViewModel = WebApplication5.Models.userViewModel;
+using UserModel = GodBot.Models.userModel;
+using GodBot.Models;
+using GodBot.Controllers;
+using System.Text.Json;
+using System;
+using static System.Collections.Specialized.BitVector32;
+using Microsoft.VisualBasic;
+using Discord;
 
 namespace WebApplication5.Controllers
 {
@@ -50,7 +59,30 @@ namespace WebApplication5.Controllers
 
         public IActionResult Tickets()
         {
-            return View();
+
+            GodBot.Logger.LogToFile("Info", "Go to page \"Tickets\"");
+            string[] files = Directory.GetFiles("users", "*.json");
+            UserModel[] users = new UserModel[files.Length];
+            foreach (string file in files)
+                GodBot.Logger.LogToFile("Info", $"Detected file{file}");
+            for (int i = 0; i < files.Length; i++)
+            {
+                UserModel? tempUser = new();
+                using (var r = new StreamReader(files[i]))
+                {
+                    string temp = r.ReadToEnd();
+                    tempUser = JsonSerializer.Deserialize<UserModel>(temp);
+                    r.Close();
+                }
+                if (tempUser.verified == false & tempUser.Complete == true)
+                    users[i] = tempUser;
+            }
+            List<UserModel> newUser = new List<UserModel>();
+            foreach (var user in users)
+            {
+                if (user != null) { newUser.Add(user); } 
+            }
+            return View(newUser);
         }
 
         public IActionResult Settings()
@@ -79,14 +111,61 @@ namespace WebApplication5.Controllers
 			}
             return View(logs);
         }
-		#endregion
 
-		[HttpPost]
+        #endregion
+        [HttpPost]
 		public ActionResult Tickets (string action)
 		{
             GodBot.Logger.LogToFile("Info", "Go to page \"Tickets\"");
+            string[] files = Directory.GetFiles("users", "*.json");
+            UserModel[] users = new UserModel[files.Length];
+            foreach (string file in files)
+                GodBot.Logger.LogToFile("Info", $"Detected file{file}");
+            for (int i = 0; i < files.Length; i++)
+            {
+                UserModel? tempUser = new();
+                using (var r = new StreamReader(files[i]))
+                {
+                    string temp = r.ReadToEnd();
+                    tempUser = JsonSerializer.Deserialize<UserModel>(temp);
+                    r.Close();
+                }
+                if (action == $"accept{{{tempUser.Id}}}")
+                {
+                    tempUser.verified = true;
+                    SendMessage message = new();
+                    message.sendAccept(tempUser);
+                    using (var f = new StreamWriter($"users/{tempUser.Id}.json", false))
+                    {
+                        string s = JsonSerializer.Serialize(tempUser);
+                        f.WriteLine(s);
+                        Logger.LogToFile("Success!", $" Success user card:\n {tempUser.Name}");
+                        f.Close();
+                    }
+                }else if (action == $"reject{{{tempUser.Id}}}")
+                {
+                    tempUser.Complete = false;
+                    using (var f = new StreamWriter($"users/{tempUser.Id}.json", false))
+                    {
+                        string s = JsonSerializer.Serialize(tempUser);
+                        f.WriteLine(s);
+                        Logger.LogToFile("Reject!", $" User card Removed:\n {tempUser.Name}");
+                        f.Close();
+                    }
+                    SendMessage message = new();
+                    message.sendReject(tempUser);
+                }
+                if (tempUser.verified == false & tempUser.Complete == true) 
+                users[i] = tempUser;
+            }
+
             ViewData["action"] = action;
-            return View();
+            List<UserModel> newUser = new List<UserModel>();
+            foreach (var user in users)
+            {
+                if (user != null) { newUser.Add(user); }
+            }
+            return View(newUser);
         }
         [HttpPost]
         public ActionResult Logs(string action)

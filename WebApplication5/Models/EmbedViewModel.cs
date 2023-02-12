@@ -2,9 +2,13 @@
 
 namespace WebApplication5.Models
 {
+	
 	public class EmbedViewModel
 	{
-		public List<SelectListItem> channelViewModels = new List<SelectListItem>();
+		public string EmbedID { get; set; }
+		public string channelName { get; set; }
+		public List<SelectListItem> sendedEmbed = new();
+		public List<SelectListItem> channelViewModels = new();
 		public string Title { get; set; }
 		public string Description { get; set; }
 		public string Url { get; set; }
@@ -15,7 +19,7 @@ namespace WebApplication5.Models
 		public string authorIcon { get; set; }
 		public string fildName1 { get; set; }
 		public string fildValue1 { get; set; }
-		public string fildInline1 { get; set; }
+		public string fildInline1 { get ; set; }
 		public string fildName2 { get; set; }
 		public string fildValue2 { get; set; }
 		public string fildInline2 { get; set; }

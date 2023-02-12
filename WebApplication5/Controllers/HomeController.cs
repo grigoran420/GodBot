@@ -18,6 +18,7 @@ using System;
 using static System.Collections.Specialized.BitVector32;
 using Microsoft.VisualBasic;
 using Discord;
+using System.Runtime.CompilerServices;
 
 namespace WebApplication5.Controllers
 {
@@ -36,20 +37,45 @@ namespace WebApplication5.Controllers
 		{
             //MixedModel model = new MixedModel();
             GodBot.Logger.LogToFile("System", "Bot is start");
-            var Model = new Models.EmbedViewModel();
-            var temp = GodBot.SearchChannels.Channels();
+            string[] files = Directory.GetFiles("Embeds", "*.json");
+
+			Models.EmbedViewModel Model = new();
+            foreach (string x in files)
+            {
+                using (var f = new StreamReader(x))
+                {
+                    GodBot.EmbedModel tempModel = new();
+                    string s = f.ReadToEnd();
+                    tempModel = JsonSerializer.Deserialize<GodBot.EmbedModel>(s);
+                    //SendedMessages sendedMessages = new() { ID = tempModel.messageID, channelName = tempModel.channelName };
+					SelectListItem item = new SelectListItem()
+					{
+						Value = tempModel.messageID.ToString(),
+						Text = tempModel.channelName.ToString(),
+					};
+
+					Model.sendedEmbed.Add(item);
+                }
+            }
+            if (Model.sendedEmbed.Count != 0)
+			    Model.sendedEmbed.First().Selected = true;
+
+			var temp = GodBot.SearchChannels.Channels();
             foreach (var t in temp)
             {
-                SelectListItem item = new SelectListItem() {
-                Value=t.ChannelId.ToString(),
-                Text=t.ChannelName.ToString(),
+                SelectListItem item = new SelectListItem() 
+                {
+                    Value=t.ChannelId.ToString(),
+                    Text=t.ChannelName.ToString(),
                 };
 				Model.channelViewModels.Add(item);
 
 			}
-			Model.channelViewModels.First().Selected = true;
+			if (Model.channelViewModels.Count != 0)
+				Model.channelViewModels.First().Selected = true;
 			var ColorConverter = new ColorConverter();
             var Color = ColorConverter.ConvertFromString("#DEB487");
+
 			return View(Model);
 		}
         public IActionResult Privacy()

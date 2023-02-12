@@ -1,95 +1,1705 @@
-23:03:55 Gateway     Resumed previous session
-23:03:56 Gateway     A ButtonExecuted handler has thrown an unhandled exception.:
-Discord.Net.HttpException: The server responded with error 40060: Interaction has already been acknowledged.
-   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
-   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
-   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
-   at Discord.API.DiscordRestApiClient.SendJsonAsync(String method, String endpoint, Object payload, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
-   at Discord.API.DiscordRestApiClient.CreateInteractionResponseAsync(InteractionResponse response, UInt64 interactionId, String interactionToken, RequestOptions options)
-   at Discord.Rest.InteractionHelper.SendInteractionResponseAsync(BaseDiscordClient client, InteractionResponse response, IDiscordInteraction interaction, IMessageChannel channel, RequestOptions options)
-   at Discord.WebSocket.SocketMessageComponent.RespondWithModalAsync(Modal modal, RequestOptions options)
-   at GodBot.NewMember.VerificationButton(SocketMessageComponent component) in C:\Users\Юрий\source\repos\WebApplication5\GodBot\Controllers\NewMember.cs:line 267
-   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
-   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
-07.02.2023 23:4:5 -> System: Updated user card:
- {"Id":707215911190396978,"Name":"Avantel","userAutarUrl":"https://cdn.discordapp.com/avatars/707215911190396978/e8b01c101b9b9feb45b3283ac7f40680.png?size=128","Steam":"1","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"","Social":"","Wargaming":"","ganres":"1","Games":"","Complete":false,"verified":null}
-23:04:05 Gateway     A ModalSubmitted handler has thrown an unhandled exception.:
-Discord.Net.HttpException: The server responded with error 40060: Interaction has already been acknowledged.
-   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
-   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
-   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
-   at Discord.API.DiscordRestApiClient.SendJsonAsync(String method, String endpoint, Object payload, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
-   at Discord.API.DiscordRestApiClient.CreateInteractionResponseAsync(InteractionResponse response, UInt64 interactionId, String interactionToken, RequestOptions options)
-   at Discord.Rest.InteractionHelper.SendInteractionResponseAsync(BaseDiscordClient client, InteractionResponse response, IDiscordInteraction interaction, IMessageChannel channel, RequestOptions options)
-   at Discord.WebSocket.SocketModal.RespondAsync(String text, Embed[] embeds, Boolean isTTS, Boolean ephemeral, AllowedMentions allowedMentions, MessageComponent components, Embed embed, RequestOptions options)
-   at GodBot.NewMember.VerifiedModal(SocketModal modal) in C:\Users\Юрий\source\repos\WebApplication5\GodBot\Controllers\NewMember.cs:line 232
-   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
-   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
-23:33:53 Discord     Discord.Net v3.9.0 (API v10)
-23:33:53 Gateway     Connecting
-23:33:55 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
-23:33:55 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
-23:33:55 Gateway     Connected
-23:33:57 Gateway     Ready
-07.02.2023 23:33:59 -> System: Bot is start
-07.02.2023 23:35:3 -> Info: Go to page "Tickets"
-07.02.2023 23:35:3 -> Info: Detected fileusers\344864166923730945.json
-07.02.2023 23:35:3 -> Info: Detected fileusers\491487830862987266.json
-07.02.2023 23:35:3 -> Info: Detected fileusers\707215911190396978.json
-07.02.2023 23:35:14 -> Info: Go to page "Tickets"
-07.02.2023 23:35:14 -> Info: Detected fileusers\344864166923730945.json
-07.02.2023 23:35:14 -> Info: Detected fileusers\491487830862987266.json
-07.02.2023 23:35:14 -> Info: Detected fileusers\707215911190396978.json
-07.02.2023 23:35:24 -> Info: Go to page "Tickets"
-07.02.2023 23:35:24 -> Info: Detected fileusers\344864166923730945.json
-07.02.2023 23:35:24 -> Info: Detected fileusers\491487830862987266.json
-07.02.2023 23:35:24 -> Info: Detected fileusers\707215911190396978.json
-07.02.2023 23:35:33 -> Info: Go to page "Tickets"
-07.02.2023 23:35:33 -> Info: Detected fileusers\344864166923730945.json
-07.02.2023 23:35:33 -> Info: Detected fileusers\491487830862987266.json
-07.02.2023 23:35:33 -> Info: Detected fileusers\707215911190396978.json
-07.02.2023 23:35:33 -> Reject!:  User card Removed:
+00:47:11 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:47:11 Gateway     Connected
+18:28:42 Discord     Discord.Net v3.9.0 (API v10)
+18:28:42 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+18:28:42 Gateway     Connecting
+18:28:45 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+18:28:45 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+18:28:45 Gateway     Connected
+18:28:46 Gateway     Ready
+08.02.2023 18:29:20 -> Info: Go to page "Tickets"
+08.02.2023 18:29:26 -> Info: Go to page "Tickets"
+08.02.2023 18:29:27 -> Info: Go to page "Logs"
+08.02.2023 18:29:28 -> Info: Go to page "Tickets"
+08.02.2023 18:29:38 -> Info: Go to page "Tickets"
+08.02.2023 18:29:48 -> Info: Go to page "Tickets"
+08.02.2023 18:29:58 -> Info: Go to page "Tickets"
+08.02.2023 18:30:9 -> Info: Go to page "Tickets"
+08.02.2023 18:30:19 -> Info: Go to page "Tickets"
+08.02.2023 18:30:29 -> Info: Go to page "Tickets"
+08.02.2023 18:30:39 -> Info: Go to page "Tickets"
+08.02.2023 18:30:50 -> Info: Go to page "Tickets"
+08.02.2023 18:30:58 -> Info: Go to page "Logs"
+18:32:34 Discord     Discord.Net v3.9.0 (API v10)
+18:32:34 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+18:32:34 Gateway     Connecting
+18:32:37 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+18:32:37 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+18:32:37 Gateway     Connected
+18:32:38 Gateway     Ready
+18:33:54 Discord     Discord.Net v3.9.0 (API v10)
+18:33:54 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+18:33:54 Gateway     Connecting
+18:33:56 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+18:33:56 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+18:33:56 Gateway     Connected
+18:33:57 Gateway     Ready
+18:37:10 Discord     Discord.Net v3.9.0 (API v10)
+18:37:10 Gateway     Connecting
+18:37:12 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+18:37:12 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+18:37:12 Gateway     Connected
+18:37:13 Gateway     Ready
+08.02.2023 18:37:45 -> Info: Go to page "Tickets"
+08.02.2023 18:37:47 -> Info: Go to page "Tickets"
+08.02.2023 18:37:57 -> Info: Go to page "Tickets"
+08.02.2023 18:38:7 -> Info: Go to page "Tickets"
+08.02.2023 18:38:17 -> Info: Go to page "Tickets"
+08.02.2023 18:38:28 -> Info: Go to page "Tickets"
+08.02.2023 18:38:38 -> Info: Go to page "Tickets"
+08.02.2023 18:38:48 -> Info: Go to page "Tickets"
+08.02.2023 18:38:58 -> Info: Go to page "Tickets"
+08.02.2023 18:39:8 -> Info: Go to page "Tickets"
+08.02.2023 18:39:19 -> Info: Go to page "Tickets"
+08.02.2023 18:39:29 -> Info: Go to page "Tickets"
+08.02.2023 18:39:39 -> Info: Go to page "Tickets"
+08.02.2023 18:39:49 -> Info: Go to page "Tickets"
+08.02.2023 18:39:59 -> Info: Go to page "Tickets"
+08.02.2023 18:40:9 -> Info: Go to page "Tickets"
+18:42:04 Discord     Discord.Net v3.9.0 (API v10)
+18:42:04 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+18:42:04 Gateway     Connecting
+18:42:07 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+18:42:07 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+18:42:07 Gateway     Connected
+18:42:07 Gateway     Ready
+08.02.2023 18:43:10 -> System: Create or edit user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"132","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":null,"Social":null,"Wargaming":null,"ganres":null,"Games":null,"Complete":false,"verified":false}
+08.02.2023 18:43:15 -> System: Updated user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"132","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"","Social":"","Wargaming":"","ganres":"123","Games":"","Complete":false,"verified":false}
+08.02.2023 18:43:20 -> Info: Go to page "Tickets"
+08.02.2023 18:43:22 -> Info: Go to page "Tickets"
+08.02.2023 18:43:25 -> System: Complete user card:
+ Username:P01nt | Z€r0 discord id: 491487830862987266
+08.02.2023 18:43:33 -> Info: Go to page "Tickets"
+08.02.2023 18:43:33 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 18:43:43 -> Info: Go to page "Tickets"
+08.02.2023 18:43:43 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 18:43:53 -> Info: Go to page "Tickets"
+08.02.2023 18:43:53 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 18:43:57 -> Info: Go to page "Tickets"
+08.02.2023 18:43:57 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 18:43:57 -> Reject!:  User card Removed:
  P01nt | Z€r0
-07.02.2023 23:35:34 -> Info: Go to page "Tickets"
-07.02.2023 23:35:34 -> Info: Detected fileusers\344864166923730945.json
-07.02.2023 23:35:34 -> Info: Detected fileusers\491487830862987266.json
-07.02.2023 23:35:34 -> Info: Detected fileusers\707215911190396978.json
-07.02.2023 23:35:34 -> Reject!:  User card Removed:
- Avantel
-07.02.2023 23:35:44 -> Info: Go to page "Tickets"
-07.02.2023 23:35:44 -> Info: Detected fileusers\344864166923730945.json
-07.02.2023 23:35:44 -> Info: Detected fileusers\491487830862987266.json
-07.02.2023 23:35:44 -> Info: Detected fileusers\707215911190396978.json
-07.02.2023 23:35:44 -> System: Bot is start
-07.02.2023 23:35:45 -> Info: Go to page "Tickets"
-07.02.2023 23:35:45 -> Info: Detected fileusers\344864166923730945.json
-07.02.2023 23:35:45 -> Info: Detected fileusers\491487830862987266.json
-07.02.2023 23:35:45 -> Info: Detected fileusers\707215911190396978.json
-07.02.2023 23:35:45 -> Info: Go to page "Logs"
-23:37:59 Discord     Discord.Net v3.9.0 (API v10)
-23:37:59 Gateway     Connecting
-23:38:02 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
-23:38:02 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
-23:38:02 Gateway     Connected
-23:38:03 Gateway     Ready
-07.02.2023 23:39:18 -> Info: Go to page "Tickets"
-07.02.2023 23:39:18 -> Info: Detected fileusers\344864166923730945.json
-07.02.2023 23:39:18 -> Info: Detected fileusers\491487830862987266.json
-07.02.2023 23:39:18 -> Info: Detected fileusers\707215911190396978.json
-07.02.2023 23:39:19 -> System: Create or edit user card:
- {"Id":344864166923730945,"Name":"\u0425\u0430\u043B\u0430\u0434\u044D\u0446\u00A9","userAutarUrl":"https://cdn.discordapp.com/avatars/344864166923730945/53a930aa43d8835b7d6b49e0ac9f8860.png?size=128","Steam":"123","Epic":"321","Origin":"1234","Xbox":"4321","Genshin":"0","Osu":null,"Social":null,"Wargaming":null,"ganres":null,"Games":null,"Complete":false,"verified":false}
-07.02.2023 23:39:25 -> Info: Go to page "Logs"
-07.02.2023 23:39:32 -> System: Updated user card:
- {"Id":344864166923730945,"Name":"\u0425\u0430\u043B\u0430\u0434\u044D\u0446\u00A9","userAutarUrl":"https://cdn.discordapp.com/avatars/344864166923730945/53a930aa43d8835b7d6b49e0ac9f8860.png?size=128","Steam":"123","Epic":"321","Origin":"1234","Xbox":"4321","Genshin":"0","Osu":"1133","Social":"3311","Wargaming":"2222","ganres":"4444","Games":"5","Complete":false,"verified":false}
-07.02.2023 23:39:34 -> System: Complete user card:
- Username:Халадэц© discord id: 344864166923730945
-07.02.2023 23:39:45 -> Info: Go to page "Tickets"
-07.02.2023 23:39:45 -> Info: Detected fileusers\344864166923730945.json
-07.02.2023 23:39:45 -> Info: Detected fileusers\491487830862987266.json
-07.02.2023 23:39:45 -> Info: Detected fileusers\707215911190396978.json
-07.02.2023 23:39:46 -> Info: Go to page "Tickets"
-07.02.2023 23:39:46 -> Info: Detected fileusers\344864166923730945.json
-07.02.2023 23:39:46 -> Info: Detected fileusers\491487830862987266.json
-07.02.2023 23:39:46 -> Info: Detected fileusers\707215911190396978.json
-07.02.2023 23:39:46 -> Reject!:  User card Removed:
- Халадэц©
+08.02.2023 18:44:7 -> Info: Go to page "Tickets"
+08.02.2023 18:44:7 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 18:44:17 -> Info: Go to page "Tickets"
+08.02.2023 18:44:17 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 18:44:28 -> Info: Go to page "Tickets"
+08.02.2023 18:44:28 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 18:44:38 -> Info: Go to page "Tickets"
+08.02.2023 18:44:38 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 18:44:48 -> Info: Go to page "Tickets"
+08.02.2023 18:44:48 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 18:44:58 -> Info: Go to page "Tickets"
+08.02.2023 18:44:58 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 18:45:8 -> Info: Go to page "Tickets"
+08.02.2023 18:45:8 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 18:45:19 -> Info: Go to page "Tickets"
+08.02.2023 18:45:19 -> Info: Detected fileusers\491487830862987266.json
+19:00:48 Discord     Discord.Net v3.9.0 (API v10)
+19:00:48 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:00:48 Gateway     Connecting
+19:00:51 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:00:51 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:00:51 Gateway     Connected
+19:00:52 Gateway     Ready
+08.02.2023 19:1:8 -> System: Create or edit user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"123124","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":null,"Social":null,"Wargaming":null,"ganres":null,"Games":null,"Complete":false,"verified":false}
+08.02.2023 19:1:14 -> System: Updated user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"123124","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"214124","Social":"","Wargaming":"","ganres":"124214","Games":"","Complete":false,"verified":false}
+08.02.2023 19:1:57 -> System: Updated user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"123124","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"","Social":"","Wargaming":"","ganres":"124214","Games":"","Complete":false,"verified":false}
+08.02.2023 19:2:0 -> System: Complete user card:
+ Username:P01nt | Z€r0 discord id: 491487830862987266
+08.02.2023 19:2:4 -> Info: Go to page "Tickets"
+08.02.2023 19:2:4 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:2:7 -> Info: Go to page "Tickets"
+08.02.2023 19:2:7 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:2:7 -> Success!:  Success user card:
+ P01nt | Z€r0
+08.02.2023 19:2:17 -> Info: Go to page "Tickets"
+08.02.2023 19:2:17 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:2:27 -> Info: Go to page "Tickets"
+08.02.2023 19:2:27 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:2:30 -> System: Create or edit user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"12312","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":null,"Social":null,"Wargaming":null,"ganres":null,"Games":null,"Complete":false,"verified":false}
+08.02.2023 19:2:35 -> System: Updated user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"12312","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"","Social":"","Wargaming":"","ganres":"12412","Games":"","Complete":false,"verified":false}
+08.02.2023 19:2:37 -> System: Complete user card:
+ Username:P01nt | Z€r0 discord id: 491487830862987266
+08.02.2023 19:2:37 -> Info: Go to page "Tickets"
+08.02.2023 19:2:37 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:2:40 -> Info: Go to page "Tickets"
+08.02.2023 19:2:40 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:2:40 -> Success!:  Success user card:
+ P01nt | Z€r0
+19:04:28 Discord     Discord.Net v3.9.0 (API v10)
+19:04:28 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:04:59 Discord     Discord.Net v3.9.0 (API v10)
+19:04:59 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:04:59 Gateway     Connecting
+19:05:12 Discord     Discord.Net v3.9.0 (API v10)
+19:05:13 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:05:13 Gateway     Connecting
+19:05:15 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:05:15 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:05:15 Gateway     Connected
+19:05:16 Gateway     Ready
+08.02.2023 19:5:41 -> System: Create or edit user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"214","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":null,"Social":null,"Wargaming":null,"ganres":null,"Games":null,"Complete":false,"verified":false}
+08.02.2023 19:5:47 -> System: Updated user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"214","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"","Social":"","Wargaming":"","ganres":"214","Games":"","Complete":false,"verified":false}
+08.02.2023 19:5:58 -> System: Complete user card:
+ Username:P01nt | Z€r0 discord id: 491487830862987266
+08.02.2023 19:6:1 -> Info: Go to page "Tickets"
+08.02.2023 19:6:1 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:6:3 -> Info: Go to page "Tickets"
+08.02.2023 19:6:3 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:6:3 -> Success!:  Success user card:
+ P01nt | Z€r0
+08.02.2023 19:6:13 -> Info: Go to page "Tickets"
+08.02.2023 19:6:13 -> Info: Detected fileusers\491487830862987266.json
+19:06:54 Discord     Discord.Net v3.9.0 (API v10)
+19:06:54 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:06:54 Gateway     Connecting
+19:06:57 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:06:57 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:06:57 Gateway     Connected
+19:06:57 Gateway     Ready
+08.02.2023 19:8:8 -> System: Create or edit user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"123","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":null,"Social":null,"Wargaming":null,"ganres":null,"Games":null,"Complete":false,"verified":false}
+08.02.2023 19:8:15 -> System: Updated user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"123","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"","Social":"","Wargaming":"","ganres":"124","Games":"","Complete":false,"verified":false}
+08.02.2023 19:8:17 -> System: Complete user card:
+ Username:P01nt | Z€r0 discord id: 491487830862987266
+08.02.2023 19:8:21 -> Info: Go to page "Tickets"
+08.02.2023 19:8:21 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:8:23 -> Info: Go to page "Tickets"
+08.02.2023 19:8:23 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:8:23 -> Success!:  Success user card:
+ P01nt | Z€r0
+08.02.2023 19:8:34 -> Info: Go to page "Tickets"
+08.02.2023 19:8:34 -> Info: Detected fileusers\491487830862987266.json
+19:14:25 Discord     Discord.Net v3.9.0 (API v10)
+19:14:25 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:14:25 Gateway     Connecting
+19:14:27 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:14:27 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:14:27 Gateway     Connected
+19:14:28 Gateway     Ready
+08.02.2023 19:14:46 -> System: Bot is start
+08.02.2023 19:14:48 -> System: Bot is start
+08.02.2023 19:14:50 -> System: Bot is start
+08.02.2023 19:14:51 -> System: Bot is start
+08.02.2023 19:14:53 -> System: Bot is start
+08.02.2023 19:15:1 -> Info: Go to page "Logs"
+08.02.2023 19:15:17 -> Info: Go to page "Tickets"
+08.02.2023 19:15:17 -> Info: Detected fileusers\491487830862987266.json
+19:17:17 Discord     Discord.Net v3.9.0 (API v10)
+19:17:17 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:17:17 Gateway     Connecting
+19:17:20 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:17:20 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:17:20 Gateway     Connected
+19:17:21 Gateway     Ready
+08.02.2023 19:17:33 -> Info: Go to page "Tickets"
+08.02.2023 19:17:33 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:17:41 -> System: Create or edit user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"\u0430\u0432\u043F","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":null,"Social":null,"Wargaming":null,"ganres":null,"Games":null,"Complete":false,"verified":false}
+08.02.2023 19:17:44 -> Info: Go to page "Tickets"
+08.02.2023 19:17:44 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:17:46 -> System: Updated user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"\u0430\u0432\u043F","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"","Social":"","Wargaming":"","ganres":"\u0432\u0430\u043F","Games":"","Complete":false,"verified":false}
+08.02.2023 19:17:48 -> System: Complete user card:
+ Username:P01nt | Z€r0 discord id: 491487830862987266
+08.02.2023 19:17:53 -> Info: Go to page "Tickets"
+08.02.2023 19:17:53 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:17:55 -> Info: Go to page "Tickets"
+08.02.2023 19:17:55 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:17:55 -> Success!:  Success user card:
+ P01nt | Z€r0
+08.02.2023 19:18:6 -> Info: Go to page "Tickets"
+08.02.2023 19:18:6 -> Info: Detected fileusers\491487830862987266.json
+19:18:39 Discord     Discord.Net v3.9.0 (API v10)
+19:18:39 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:18:39 Gateway     Connecting
+19:18:42 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:18:42 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:18:42 Gateway     Connected
+19:18:43 Gateway     Ready
+08.02.2023 19:18:55 -> Info: Go to page "Tickets"
+08.02.2023 19:18:55 -> Info: Detected fileusers\491487830862987266.json
+19:19:49 Discord     Discord.Net v3.9.0 (API v10)
+19:19:49 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:19:49 Gateway     Connecting
+19:19:52 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:19:52 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:19:52 Gateway     Connected
+19:19:52 Gateway     Ready
+08.02.2023 19:20:10 -> Info: Go to page "Tickets"
+08.02.2023 19:20:10 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:20:20 -> Info: Go to page "Tickets"
+08.02.2023 19:20:20 -> Info: Detected fileusers\491487830862987266.json
+08.02.2023 19:20:31 -> Info: Go to page "Tickets"
+08.02.2023 19:20:31 -> Info: Detected fileusers\491487830862987266.json
+19:21:34 Discord     Discord.Net v3.9.0 (API v10)
+19:21:34 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:21:34 Gateway     Connecting
+19:21:37 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:21:37 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:21:37 Gateway     Connected
+19:21:38 Gateway     Ready
+08.02.2023 19:21:50 -> Info: Go to page "Tickets"
+08.02.2023 19:21:50 -> Info: Detected fileusers\491487830862987266.json
+19:22:45 Discord     Discord.Net v3.9.0 (API v10)
+19:22:45 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:22:45 Gateway     Connecting
+19:22:48 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:22:48 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:22:48 Gateway     Connected
+19:22:49 Gateway     Ready
+08.02.2023 19:23:0 -> Info: Go to page "Tickets"
+08.02.2023 19:23:0 -> Info: Detected fileusers\491487830862987266.json
+19:23:23 Discord     Discord.Net v3.9.0 (API v10)
+19:23:23 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+19:23:23 Gateway     Connecting
+19:23:25 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:23:25 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+19:23:25 Gateway     Connected
+19:23:26 Gateway     Ready
+08.02.2023 19:23:37 -> Info: Go to page "Tickets"
+08.02.2023 19:23:37 -> Info: Detected fileusers\491487830862987266.json
+15:25:43 Discord     Discord.Net v3.9.0 (API v10)
+15:25:44 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+15:25:44 Gateway     Connecting
+15:26:02 Discord     Discord.Net v3.9.0 (API v10)
+15:26:02 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+15:26:02 Gateway     Connecting
+15:26:04 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+15:26:04 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+15:26:04 Gateway     Connected
+15:26:05 Gateway     Ready
+09.02.2023 15:26:21 -> System: Bot is start
+15:27:51 Discord     Discord.Net v3.9.0 (API v10)
+15:27:51 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+15:27:51 Gateway     Connecting
+15:27:54 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+15:27:54 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+15:27:54 Gateway     Connected
+15:27:55 Gateway     Ready
+09.02.2023 15:28:8 -> System: Bot is start
+15:34:49 Discord     Discord.Net v3.9.0 (API v10)
+15:34:49 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+15:34:49 Gateway     Connecting
+15:34:52 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+15:34:52 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+15:34:52 Gateway     Connected
+15:34:53 Gateway     Ready
+09.02.2023 15:35:54 -> System: Bot is start
+16:35:04 Discord     Discord.Net v3.9.0 (API v10)
+16:35:04 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+16:35:04 Gateway     Connecting
+16:35:07 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+16:35:07 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+16:35:07 Gateway     Connected
+16:35:08 Gateway     Ready
+09.02.2023 16:35:34 -> System: Bot is start
+23:22:12 Discord     Discord.Net v3.9.0 (API v10)
+23:22:12 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+23:22:12 Gateway     Connecting
+23:22:19 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:22:19 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:22:19 Gateway     Connected
+23:22:21 Gateway     Ready
+10.02.2023 23:22:29 -> System: Bot is start
+23:29:26 Discord     Discord.Net v3.9.0 (API v10)
+23:29:26 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+23:29:26 Gateway     Connecting
+23:29:28 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:29:28 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:29:28 Gateway     Connected
+23:29:29 Gateway     Ready
+10.02.2023 23:29:40 -> System: Bot is start
+23:30:13 Discord     Discord.Net v3.9.0 (API v10)
+23:30:14 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+23:30:14 Gateway     Connecting
+23:30:19 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:30:19 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:30:19 Gateway     Connected
+23:30:20 Gateway     Ready
+10.02.2023 23:30:53 -> System: Bot is start
+23:50:08 Discord     Discord.Net v3.9.0 (API v10)
+23:50:08 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+23:50:08 Gateway     Connecting
+23:50:11 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:50:11 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:50:11 Gateway     Connected
+23:50:12 Gateway     Ready
+10.02.2023 23:50:24 -> System: Bot is start
+23:54:01 Discord     Discord.Net v3.9.0 (API v10)
+23:54:01 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+23:54:01 Gateway     Connecting
+23:54:05 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:54:05 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:54:05 Gateway     Connected
+23:54:06 Gateway     Ready
+10.02.2023 23:54:19 -> System: Bot is start
+23:55:01 Discord     Discord.Net v3.9.0 (API v10)
+23:55:01 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+23:55:01 Gateway     Connecting
+23:55:05 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:55:05 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:55:05 Gateway     Connected
+23:55:06 Gateway     Ready
+10.02.2023 23:55:15 -> System: Bot is start
+23:55:30 Discord     Discord.Net v3.9.0 (API v10)
+23:55:30 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+23:55:30 Gateway     Connecting
+23:55:32 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:55:32 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:55:32 Gateway     Connected
+23:55:33 Gateway     Ready
+10.02.2023 23:55:43 -> System: Bot is start
+23:56:31 Discord     Discord.Net v3.9.0 (API v10)
+23:56:31 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+23:56:31 Gateway     Connecting
+23:56:34 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:56:34 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+23:56:34 Gateway     Connected
+23:56:35 Gateway     Ready
+10.02.2023 23:56:45 -> System: Bot is start
+00:09:28 Discord     Discord.Net v3.9.0 (API v10)
+00:09:28 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:09:28 Gateway     Connecting
+00:09:31 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:09:31 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:09:31 Gateway     Connected
+00:09:32 Gateway     Ready
+11.02.2023 0:9:42 -> System: Bot is start
+00:10:37 Discord     Discord.Net v3.9.0 (API v10)
+00:10:37 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:10:37 Gateway     Connecting
+00:10:40 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:10:40 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:10:40 Gateway     Connected
+00:10:41 Gateway     Ready
+11.02.2023 0:10:50 -> System: Bot is start
+00:12:19 Discord     Discord.Net v3.9.0 (API v10)
+00:12:19 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:12:19 Gateway     Connecting
+00:12:22 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:12:22 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:12:22 Gateway     Connected
+00:12:22 Gateway     Ready
+11.02.2023 0:12:33 -> System: Bot is start
+00:14:20 Discord     Discord.Net v3.9.0 (API v10)
+00:14:20 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:14:20 Gateway     Connecting
+00:14:23 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:14:23 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:14:23 Gateway     Connected
+00:14:24 Gateway     Ready
+11.02.2023 0:14:33 -> System: Bot is start
+00:21:00 Discord     Discord.Net v3.9.0 (API v10)
+00:21:00 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:21:00 Gateway     Connecting
+00:21:03 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:21:03 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:21:03 Gateway     Connected
+00:21:04 Gateway     Ready
+11.02.2023 0:21:14 -> System: Bot is start
+00:25:22 Discord     Discord.Net v3.9.0 (API v10)
+00:25:22 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:25:22 Gateway     Connecting
+00:25:24 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:25:24 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:25:24 Gateway     Connected
+00:25:25 Gateway     Ready
+11.02.2023 0:25:42 -> System: Bot is start
+00:28:45 Discord     Discord.Net v3.9.0 (API v10)
+00:28:45 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:28:45 Gateway     Connecting
+00:28:48 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:28:48 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:28:48 Gateway     Connected
+00:28:49 Gateway     Ready
+11.02.2023 0:28:57 -> System: Bot is start
+00:31:50 Discord     Discord.Net v3.9.0 (API v10)
+00:31:50 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:31:50 Gateway     Connecting
+00:31:52 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:31:52 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:31:52 Gateway     Connected
+00:31:54 Gateway     Ready
+11.02.2023 0:32:3 -> System: Bot is start
+00:32:24 Discord     Discord.Net v3.9.0 (API v10)
+00:32:24 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:32:24 Gateway     Connecting
+00:32:26 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:32:26 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:32:26 Gateway     Connected
+00:32:27 Gateway     Ready
+11.02.2023 0:32:37 -> System: Bot is start
+00:33:35 Discord     Discord.Net v3.9.0 (API v10)
+00:33:35 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:33:35 Gateway     Connecting
+00:33:38 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:33:38 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:33:38 Gateway     Connected
+00:33:39 Gateway     Ready
+11.02.2023 0:33:49 -> System: Bot is start
+11.02.2023 0:34:13 -> System: Bot is start
+00:34:48 Discord     Discord.Net v3.9.0 (API v10)
+00:34:49 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:34:49 Gateway     Connecting
+00:34:51 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:34:51 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:34:51 Gateway     Connected
+00:34:52 Gateway     Ready
+11.02.2023 0:35:2 -> System: Bot is start
+00:36:55 Discord     Discord.Net v3.9.0 (API v10)
+00:36:55 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:36:56 Gateway     Connecting
+00:36:58 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:36:58 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:36:58 Gateway     Connected
+00:36:59 Gateway     Ready
+11.02.2023 0:37:13 -> System: Bot is start
+00:37:37 Discord     Discord.Net v3.9.0 (API v10)
+00:37:37 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:37:37 Gateway     Connecting
+00:37:39 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:37:39 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:37:39 Gateway     Connected
+00:37:40 Gateway     Ready
+11.02.2023 0:37:52 -> System: Bot is start
+00:38:26 Discord     Discord.Net v3.9.0 (API v10)
+00:38:26 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:38:26 Gateway     Connecting
+00:38:28 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:38:28 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:38:28 Gateway     Connected
+00:38:29 Gateway     Ready
+11.02.2023 0:38:39 -> System: Bot is start
+00:50:07 Discord     Discord.Net v3.9.0 (API v10)
+00:50:07 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:50:07 Gateway     Connecting
+00:50:10 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:50:10 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:50:10 Gateway     Connected
+00:50:11 Gateway     Ready
+00:53:16 Discord     Discord.Net v3.9.0 (API v10)
+00:53:16 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:53:16 Gateway     Connecting
+00:53:18 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:53:18 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:53:18 Gateway     Connected
+00:53:19 Gateway     Ready
+11.02.2023 0:53:30 -> System: Bot is start
+00:53:57 Discord     Discord.Net v3.9.0 (API v10)
+00:53:57 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:53:57 Gateway     Connecting
+00:54:00 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:54:00 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:54:00 Gateway     Connected
+00:54:01 Gateway     Ready
+11.02.2023 0:54:16 -> System: Bot is start
+00:55:17 Discord     Discord.Net v3.9.0 (API v10)
+00:55:17 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+00:55:17 Gateway     Connecting
+00:55:20 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:55:20 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+00:55:20 Gateway     Connected
+00:55:21 Gateway     Ready
+11.02.2023 0:55:31 -> System: Bot is start
+01:10:25 Discord     Discord.Net v3.9.0 (API v10)
+01:10:25 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:10:25 Gateway     Connecting
+01:10:28 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:10:28 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:10:28 Gateway     Connected
+01:10:29 Gateway     Ready
+11.02.2023 1:10:40 -> System: Bot is start
+01:11:13 Discord     Discord.Net v3.9.0 (API v10)
+01:11:13 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:11:13 Gateway     Connecting
+01:11:16 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:11:16 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:11:16 Gateway     Connected
+01:11:17 Gateway     Ready
+11.02.2023 1:11:28 -> System: Bot is start
+01:12:00 Discord     Discord.Net v3.9.0 (API v10)
+01:12:00 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:12:00 Gateway     Connecting
+01:12:03 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:12:03 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:12:03 Gateway     Connected
+01:12:04 Gateway     Ready
+11.02.2023 1:12:14 -> System: Bot is start
+01:14:36 Discord     Discord.Net v3.9.0 (API v10)
+01:14:36 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:14:36 Gateway     Connecting
+01:14:39 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:14:39 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:14:39 Gateway     Connected
+01:14:40 Gateway     Ready
+11.02.2023 1:14:52 -> System: Bot is start
+01:16:46 Discord     Discord.Net v3.9.0 (API v10)
+01:16:46 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:16:46 Gateway     Connecting
+01:16:48 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:16:48 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:16:49 Gateway     Connected
+01:16:49 Gateway     Ready
+11.02.2023 1:17:1 -> System: Bot is start
+01:17:36 Discord     Discord.Net v3.9.0 (API v10)
+01:17:36 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:17:36 Gateway     Connecting
+01:17:39 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:17:39 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:17:39 Gateway     Connected
+01:17:40 Gateway     Ready
+11.02.2023 1:17:49 -> System: Bot is start
+01:20:26 Discord     Discord.Net v3.9.0 (API v10)
+01:20:26 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:20:26 Gateway     Connecting
+01:21:06 Discord     Discord.Net v3.9.0 (API v10)
+01:21:06 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:21:06 Gateway     Connecting
+01:21:09 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:21:09 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:21:09 Gateway     Connected
+01:21:10 Gateway     Ready
+11.02.2023 1:21:20 -> System: Bot is start
+01:21:33 Discord     Discord.Net v3.9.0 (API v10)
+01:21:33 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:21:33 Gateway     Connecting
+01:21:36 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:21:36 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:21:36 Gateway     Connected
+01:21:37 Gateway     Ready
+11.02.2023 1:21:46 -> System: Bot is start
+01:22:51 Discord     Discord.Net v3.9.0 (API v10)
+01:22:51 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:22:51 Gateway     Connecting
+01:22:54 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:22:54 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:22:54 Gateway     Connected
+01:22:55 Gateway     Ready
+11.02.2023 1:23:4 -> System: Bot is start
+01:24:36 Discord     Discord.Net v3.9.0 (API v10)
+01:24:36 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:24:36 Gateway     Connecting
+01:24:39 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:24:39 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:24:39 Gateway     Connected
+01:24:39 Gateway     Ready
+11.02.2023 1:24:52 -> System: Bot is start
+01:26:26 Discord     Discord.Net v3.9.0 (API v10)
+01:26:26 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:26:27 Gateway     Connecting
+01:26:30 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:26:30 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:26:30 Gateway     Connected
+01:26:31 Gateway     Ready
+11.02.2023 1:26:41 -> System: Bot is start
+01:28:01 Discord     Discord.Net v3.9.0 (API v10)
+01:28:01 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:28:01 Gateway     Connecting
+01:28:04 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:28:04 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:28:04 Gateway     Connected
+01:28:05 Gateway     Ready
+11.02.2023 1:28:15 -> System: Bot is start
+01:28:28 Discord     Discord.Net v3.9.0 (API v10)
+01:28:28 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:28:28 Gateway     Connecting
+01:28:31 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:28:31 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:28:31 Gateway     Connected
+01:28:32 Gateway     Ready
+11.02.2023 1:28:41 -> System: Bot is start
+11.02.2023 1:29:1 -> System: Bot is start
+11.02.2023 1:29:21 -> System: Bot is start
+01:30:32 Discord     Discord.Net v3.9.0 (API v10)
+01:30:32 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+01:30:32 Gateway     Connecting
+01:30:36 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:30:36 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+01:30:36 Gateway     Connected
+01:30:36 Gateway     Ready
+11.02.2023 1:30:46 -> System: Bot is start
+11.02.2023 1:30:59 -> System: Bot is start
+02:15:15 Discord     Discord.Net v3.9.0 (API v10)
+02:15:15 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:15:15 Gateway     Connecting
+02:15:18 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:15:18 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:15:18 Gateway     Connected
+02:15:19 Gateway     Ready
+11.02.2023 2:15:31 -> System: Bot is start
+02:17:43 Discord     Discord.Net v3.9.0 (API v10)
+02:17:43 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:17:43 Gateway     Connecting
+02:17:45 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:17:45 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:17:45 Gateway     Connected
+02:17:46 Gateway     Ready
+11.02.2023 2:17:56 -> System: Bot is start
+02:21:01 Discord     Discord.Net v3.9.0 (API v10)
+02:21:01 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:21:01 Gateway     Connecting
+02:21:04 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:21:04 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:21:04 Gateway     Connected
+02:21:05 Gateway     Ready
+11.02.2023 2:21:14 -> System: Bot is start
+02:23:06 Discord     Discord.Net v3.9.0 (API v10)
+02:23:06 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:23:06 Gateway     Connecting
+02:23:08 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:23:08 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:23:08 Gateway     Connected
+02:23:09 Gateway     Ready
+11.02.2023 2:23:20 -> System: Bot is start
+02:24:14 Discord     Discord.Net v3.9.0 (API v10)
+02:24:14 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:24:14 Gateway     Connecting
+02:24:16 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:24:16 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:24:16 Gateway     Connected
+02:24:17 Gateway     Ready
+11.02.2023 2:24:28 -> System: Bot is start
+11.02.2023 2:25:59 -> System: Bot is start
+11.02.2023 2:26:1 -> System: Bot is start
+11.02.2023 2:26:4 -> System: Bot is start
+02:27:24 Discord     Discord.Net v3.9.0 (API v10)
+02:27:24 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:27:24 Gateway     Connecting
+02:27:26 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:27:26 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:27:27 Gateway     Connected
+02:27:27 Gateway     Ready
+11.02.2023 2:27:37 -> System: Bot is start
+02:28:08 Discord     Discord.Net v3.9.0 (API v10)
+02:28:08 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:28:08 Gateway     Connecting
+02:28:11 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:28:11 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:28:11 Gateway     Connected
+02:28:11 Gateway     Ready
+11.02.2023 2:28:22 -> System: Bot is start
+02:31:18 Discord     Discord.Net v3.9.0 (API v10)
+02:31:18 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:31:18 Gateway     Connecting
+02:31:21 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:31:21 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:31:21 Gateway     Connected
+02:31:22 Gateway     Ready
+11.02.2023 2:31:38 -> System: Bot is start
+11.02.2023 2:33:24 -> System: Bot is start
+02:35:07 Discord     Discord.Net v3.9.0 (API v10)
+02:35:07 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:35:07 Gateway     Connecting
+02:35:10 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:35:10 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:35:10 Gateway     Connected
+02:35:11 Gateway     Ready
+11.02.2023 2:35:22 -> System: Bot is start
+02:40:47 Discord     Discord.Net v3.9.0 (API v10)
+02:40:47 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:40:47 Gateway     Connecting
+02:40:49 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:40:49 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:40:49 Gateway     Connected
+02:40:50 Gateway     Ready
+11.02.2023 2:41:1 -> System: Bot is start
+02:41:14 Discord     Discord.Net v3.9.0 (API v10)
+02:41:14 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:41:14 Gateway     Connecting
+02:41:16 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:41:16 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:41:16 Gateway     Connected
+02:41:17 Gateway     Ready
+11.02.2023 2:41:31 -> System: Bot is start
+02:45:27 Discord     Discord.Net v3.9.0 (API v10)
+02:45:27 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:45:27 Gateway     Connecting
+02:45:30 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:45:30 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:45:30 Gateway     Connected
+02:45:31 Gateway     Ready
+11.02.2023 2:45:40 -> System: Bot is start
+11.02.2023 2:46:6 -> System: Bot is start
+02:48:12 Discord     Discord.Net v3.9.0 (API v10)
+02:48:12 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:48:12 Gateway     Connecting
+02:48:15 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:48:15 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:48:15 Gateway     Connected
+02:48:16 Gateway     Ready
+11.02.2023 2:48:30 -> System: Bot is start
+02:49:28 Discord     Discord.Net v3.9.0 (API v10)
+02:49:28 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:49:28 Gateway     Connecting
+02:49:30 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:49:30 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:49:30 Gateway     Connected
+02:49:31 Gateway     Ready
+11.02.2023 2:49:42 -> System: Bot is start
+02:51:07 Discord     Discord.Net v3.9.0 (API v10)
+02:51:07 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:51:07 Gateway     Connecting
+02:51:10 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:51:10 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:51:10 Gateway     Connected
+02:51:11 Gateway     Ready
+11.02.2023 2:51:20 -> System: Bot is start
+02:53:46 Discord     Discord.Net v3.9.0 (API v10)
+02:53:46 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+02:53:47 Gateway     Connecting
+02:53:49 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:53:49 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+02:53:49 Gateway     Connected
+02:53:50 Gateway     Ready
+11.02.2023 2:54:0 -> System: Bot is start
+03:01:15 Discord     Discord.Net v3.9.0 (API v10)
+03:01:15 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:01:15 Gateway     Connecting
+03:01:18 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:01:18 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:01:18 Gateway     Connected
+03:01:19 Gateway     Ready
+11.02.2023 3:1:28 -> System: Bot is start
+11.02.2023 3:1:54 -> Info: Send Embed. Param -> 
+{"Title":"214","Description":"214","Url":null,"Color":{"R":0,"G":0,"B":0,"A":255,"IsKnownColor":true,"IsEmpty":false,"IsNamedColor":true,"IsSystemColor":false,"Name":"Black"},"Icon":null,"authorName":"124","authorLink":null,"authorIcon":null,"Filds":[{"fildName":"214","fildText":"214","fildInline":true},{"fildName":"214","fildText":"214","fildInline":true},{"fildName":"142","fildText":"124","fildInline":true},{"fildName":null,"fildText":null,"fildInline":true},{"fildName":null,"fildText":null,"fildInline":true},{"fildName":null,"fildText":null,"fildInline":true},{"fildName":null,"fildText":null,"fildInline":true},{"fildName":null,"fildText":null,"fildInline":true},{"fildName":null,"fildText":null,"fildInline":true},{"fildName":null,"fildText":null,"fildInline":true},{"fildName":null,"fildText":null,"fildInline":true},{"fildName":"214","fildText":"124","fildInline":true}],"footerText":"124","footerUrl":null,"ChannelId":799656139582078976,"messageID":0,"channelName":"\u043D\u0430\u0448\u0438-\u043E\u0448\u0438\u0431\u043A\u0438"}
+11.02.2023 3:1:56 -> Info: Go to page "Logs"
+11.02.2023 3:2:51 -> System: Bot is start
+11.02.2023 3:2:55 -> Info: Send function (Send). Param -> 
+{"EmbedID":"1073755724485763072","channelName":null,"Title":null,"Description":null,"Url":null,"Color":"#000000","Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":null,"fildValue1":null,"fildInline1":"true","fildName2":null,"fildValue2":null,"fildInline2":"true","fildName3":null,"fildValue3":null,"fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":"true","fildName5":null,"fildValue5":null,"fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"true","fildName9":null,"fildValue9":null,"fildInline9":"true","fildName10":null,"fildValue10":null,"fildInline10":"true","fildName11":null,"fildValue11":null,"fildInline11":"true","fildName12":null,"fildValue12":null,"fildInline12":"true","footerText":null,"footerUrl":null,"channelId":"808345728391970856"}
+11.02.2023 3:3:0 -> Info: Send function (SendNow). Param -> 
+{"EmbedID":"1073755724485763072","channelName":null,"Title":"214","Description":null,"Url":null,"Color":"#000000","Icon":null,"authorName":"124","authorLink":null,"authorIcon":null,"fildName1":"214","fildValue1":"214","fildInline1":null,"fildName2":"214","fildValue2":"214","fildInline2":null,"fildName3":"142","fildValue3":"124","fildInline3":null,"fildName4":null,"fildValue4":null,"fildInline4":null,"fildName5":null,"fildValue5":null,"fildInline5":null,"fildName6":"214","fildValue6":"214","fildInline6":null,"fildName7":null,"fildValue7":null,"fildInline7":null,"fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":"214","fildValue12":"124","fildInline12":null,"footerText":"124","footerUrl":null,"channelId":"808345728391970856"}
+11.02.2023 3:3:1 -> Info: Go to page "Tickets"
+11.02.2023 3:3:1 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:3:2 -> Info: Go to page "Logs"
+03:05:28 Discord     Discord.Net v3.9.0 (API v10)
+03:05:28 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:05:28 Gateway     Connecting
+03:05:31 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:05:31 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:05:31 Gateway     Connected
+03:05:32 Gateway     Ready
+03:07:54 Discord     Discord.Net v3.9.0 (API v10)
+03:07:54 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:07:54 Gateway     Connecting
+03:07:57 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:07:57 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:07:57 Gateway     Connected
+03:07:58 Gateway     Ready
+11.02.2023 3:8:8 -> System: Bot is start
+03:09:20 Discord     Discord.Net v3.9.0 (API v10)
+03:09:20 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:09:20 Gateway     Connecting
+03:09:22 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:09:22 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:09:22 Gateway     Connected
+03:09:23 Gateway     Ready
+11.02.2023 3:9:34 -> System: Bot is start
+11.02.2023 3:9:48 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"124","Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"214","fildValue1":"124","fildInline1":null,"fildName2":null,"fildValue2":null,"fildInline2":null,"fildName3":"214","fildValue3":"214","fildInline3":null,"fildName4":null,"fildValue4":null,"fildInline4":null,"fildName5":null,"fildValue5":null,"fildInline5":null,"fildName6":null,"fildValue6":null,"fildInline6":null,"fildName7":null,"fildValue7":null,"fildInline7":null,"fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":null,"fildValue12":null,"fildInline12":null,"footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:9:51 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"dfg","Description":"fdg","Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"dfg","fildValue1":"fg","fildInline1":null,"fildName2":"dg","fildValue2":"fg","fildInline2":null,"fildName3":"df","fildValue3":"dg","fildInline3":null,"fildName4":null,"fildValue4":null,"fildInline4":null,"fildName5":null,"fildValue5":null,"fildInline5":null,"fildName6":null,"fildValue6":null,"fildInline6":null,"fildName7":null,"fildValue7":null,"fildInline7":null,"fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":null,"fildValue12":null,"fildInline12":null,"footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:9:54 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"214","Description":null,"Url":null,"Color":null,"Icon":null,"authorName":"124","authorLink":null,"authorIcon":null,"fildName1":"214","fildValue1":"214","fildInline1":null,"fildName2":"214","fildValue2":"214","fildInline2":null,"fildName3":"142","fildValue3":"124","fildInline3":null,"fildName4":null,"fildValue4":null,"fildInline4":null,"fildName5":null,"fildValue5":null,"fildInline5":null,"fildName6":"214","fildValue6":"214","fildInline6":null,"fildName7":null,"fildValue7":null,"fildInline7":null,"fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":"214","fildValue12":"124","fildInline12":null,"footerText":"124","footerUrl":null,"channelId":null}
+11.02.2023 3:9:57 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"dfg","Description":"fdg","Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"dfg","fildValue1":"fg","fildInline1":null,"fildName2":"dg","fildValue2":"fg","fildInline2":null,"fildName3":"df","fildValue3":"dg","fildInline3":null,"fildName4":null,"fildValue4":null,"fildInline4":null,"fildName5":null,"fildValue5":null,"fildInline5":null,"fildName6":null,"fildValue6":null,"fildInline6":null,"fildName7":null,"fildValue7":null,"fildInline7":null,"fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":null,"fildValue12":null,"fildInline12":null,"footerText":null,"footerUrl":null,"channelId":null}
+03:10:37 Discord     Discord.Net v3.9.0 (API v10)
+03:10:37 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:10:37 Gateway     Connecting
+03:10:39 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:10:39 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:10:39 Gateway     Connected
+03:10:40 Gateway     Ready
+11.02.2023 3:10:53 -> System: Bot is start
+03:14:38 Discord     Discord.Net v3.9.0 (API v10)
+03:14:38 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:14:38 Gateway     Connecting
+03:14:40 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:14:40 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:14:40 Gateway     Connected
+03:14:41 Gateway     Ready
+11.02.2023 3:14:52 -> System: Bot is start
+11.02.2023 3:14:57 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"214","fildValue1":"214","fildInline1":"true","fildName2":null,"fildValue2":null,"fildInline2":"true","fildName3":"214","fildValue3":"214","fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":"true","fildName5":"214","fildValue5":"214","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":"true","fildName8":"124","fildValue8":"124","fildInline8":"true","fildName9":null,"fildValue9":null,"fildInline9":"true","fildName10":null,"fildValue10":null,"fildInline10":"true","fildName11":null,"fildValue11":null,"fildInline11":"true","fildName12":null,"fildValue12":null,"fildInline12":"true","footerText":null,"footerUrl":null,"channelId":null}
+03:16:19 Discord     Discord.Net v3.9.0 (API v10)
+03:16:19 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:16:19 Gateway     Connecting
+03:16:26 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:16:26 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:16:26 Gateway     Connected
+03:16:29 Gateway     Ready
+11.02.2023 3:16:32 -> System: Bot is start
+11.02.2023 3:16:36 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"214","fildValue1":"214","fildInline1":"true","fildName2":null,"fildValue2":null,"fildInline2":"true","fildName3":"214","fildValue3":"214","fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":"true","fildName5":"214","fildValue5":"214","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":"true","fildName8":"124","fildValue8":"124","fildInline8":"true","fildName9":null,"fildValue9":null,"fildInline9":"true","fildName10":null,"fildValue10":null,"fildInline10":"true","fildName11":null,"fildValue11":null,"fildInline11":"true","fildName12":null,"fildValue12":null,"fildInline12":"true","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:16:39 -> System: Bot is start
+11.02.2023 3:16:48 -> Info: Send Embed. Param -> 
+{"Title":null,"Description":null,"Url":null,"Color":{"R":0,"G":0,"B":0,"A":255,"IsKnownColor":true,"IsEmpty":false,"IsNamedColor":true,"IsSystemColor":false,"Name":"Black"},"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"Filds":[{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"214","fildText":"241","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"214","fildText":"214","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"124","fildText":"124","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false}],"footerText":null,"footerUrl":null,"ChannelId":1041677966087835739,"messageID":0,"channelName":"info"}
+11.02.2023 3:16:55 -> System: Bot is start
+11.02.2023 3:16:58 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":null,"fildValue1":null,"fildInline1":null,"fildName2":null,"fildValue2":null,"fildInline2":null,"fildName3":"214","fildValue3":"241","fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":null,"fildName5":"214","fildValue5":"214","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":null,"fildName7":"124","fildValue7":"124","fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":null,"fildValue12":null,"fildInline12":null,"footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:17:14 -> Info: Send function (SendNow). Param -> 
+{"EmbedID":"1073759476303286363","channelName":null,"Title":null,"Description":null,"Url":null,"Color":"#000000","Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":null,"fildValue1":null,"fildInline1":"false","fildName2":null,"fildValue2":null,"fildInline2":"false","fildName3":"214","fildValue3":"241","fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":"false","fildName5":"214","fildValue5":"214","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"false","fildName7":"124","fildValue7":"124","fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"false","fildName9":null,"fildValue9":null,"fildInline9":"false","fildName10":null,"fildValue10":null,"fildInline10":"false","fildName11":null,"fildValue11":null,"fildInline11":"false","fildName12":null,"fildValue12":null,"fildInline12":"false","footerText":null,"footerUrl":null,"channelId":"808345728391970856"}
+03:18:29 Discord     Discord.Net v3.9.0 (API v10)
+03:18:29 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:18:29 Gateway     Connecting
+03:18:32 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:18:32 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:18:32 Gateway     Connected
+03:18:33 Gateway     Ready
+11.02.2023 3:18:42 -> System: Bot is start
+11.02.2023 3:18:49 -> Info: Send Embed. Param -> 
+{"Title":null,"Description":null,"Url":null,"Color":{"R":0,"G":0,"B":0,"A":255,"IsKnownColor":true,"IsEmpty":false,"IsNamedColor":true,"IsSystemColor":false,"Name":"Black"},"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"Filds":[{"fildName":"qwr","fildText":"qwr","fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"wqr","fildText":"wqr","fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"wqr","fildText":"wqr","fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false}],"footerText":null,"footerUrl":null,"ChannelId":808345728391970856,"messageID":0,"channelName":"\u0447\u0442\u043E-\u0442\u043E"}
+11.02.2023 3:19:7 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"dfg","Description":"fdg","Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"dfg","fildValue1":"fg","fildInline1":"true","fildName2":"dg","fildValue2":"fg","fildInline2":"true","fildName3":"df","fildValue3":"dg","fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":"true","fildName5":null,"fildValue5":null,"fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"true","fildName9":null,"fildValue9":null,"fildInline9":"true","fildName10":null,"fildValue10":null,"fildInline10":"true","fildName11":null,"fildValue11":null,"fildInline11":"true","fildName12":null,"fildValue12":null,"fildInline12":"true","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:19:13 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"qwr","fildValue1":"qwr","fildInline1":"false","fildName2":null,"fildValue2":null,"fildInline2":"false","fildName3":null,"fildValue3":null,"fildInline3":"false","fildName4":"wqr","fildValue4":"wqr","fildInline4":"false","fildName5":null,"fildValue5":null,"fildInline5":"false","fildName6":"wqr","fildValue6":"wqr","fildInline6":"false","fildName7":null,"fildValue7":null,"fildInline7":"false","fildName8":null,"fildValue8":null,"fildInline8":"false","fildName9":null,"fildValue9":null,"fildInline9":"false","fildName10":null,"fildValue10":null,"fildInline10":"false","fildName11":null,"fildValue11":null,"fildInline11":"false","fildName12":null,"fildValue12":null,"fildInline12":"false","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:19:15 -> System: Bot is start
+11.02.2023 3:19:17 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"qwr","fildValue1":"qwr","fildInline1":"false","fildName2":null,"fildValue2":null,"fildInline2":"false","fildName3":null,"fildValue3":null,"fildInline3":"false","fildName4":"wqr","fildValue4":"wqr","fildInline4":"false","fildName5":null,"fildValue5":null,"fildInline5":"false","fildName6":"wqr","fildValue6":"wqr","fildInline6":"false","fildName7":null,"fildValue7":null,"fildInline7":"false","fildName8":null,"fildValue8":null,"fildInline8":"false","fildName9":null,"fildValue9":null,"fildInline9":"false","fildName10":null,"fildValue10":null,"fildInline10":"false","fildName11":null,"fildValue11":null,"fildInline11":"false","fildName12":null,"fildValue12":null,"fildInline12":"false","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:19:21 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":null,"fildValue1":null,"fildInline1":"false","fildName2":null,"fildValue2":null,"fildInline2":"false","fildName3":"214","fildValue3":"241","fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":"false","fildName5":"214","fildValue5":"214","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"false","fildName7":"124","fildValue7":"124","fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"false","fildName9":null,"fildValue9":null,"fildInline9":"false","fildName10":null,"fildValue10":null,"fildInline10":"false","fildName11":null,"fildValue11":null,"fildInline11":"false","fildName12":null,"fildValue12":null,"fildInline12":"false","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:19:24 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"214","Description":null,"Url":null,"Color":null,"Icon":null,"authorName":"124","authorLink":null,"authorIcon":null,"fildName1":"214","fildValue1":"214","fildInline1":"false","fildName2":"214","fildValue2":"214","fildInline2":"false","fildName3":"142","fildValue3":"124","fildInline3":"false","fildName4":null,"fildValue4":null,"fildInline4":"false","fildName5":null,"fildValue5":null,"fildInline5":"false","fildName6":"214","fildValue6":"214","fildInline6":"false","fildName7":null,"fildValue7":null,"fildInline7":"false","fildName8":null,"fildValue8":null,"fildInline8":"false","fildName9":null,"fildValue9":null,"fildInline9":"false","fildName10":null,"fildValue10":null,"fildInline10":"false","fildName11":null,"fildValue11":null,"fildInline11":"false","fildName12":"214","fildValue12":"124","fildInline12":"false","footerText":"124","footerUrl":null,"channelId":null}
+11.02.2023 3:19:27 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"dfg","Description":"fdg","Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"dfg","fildValue1":"fg","fildInline1":"true","fildName2":"dg","fildValue2":"fg","fildInline2":"false","fildName3":"df","fildValue3":"dg","fildInline3":"false","fildName4":"124","fildValue4":"42","fildInline4":"true","fildName5":"214","fildValue5":"124","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"true","fildName9":null,"fildValue9":null,"fildInline9":"true","fildName10":null,"fildValue10":null,"fildInline10":"true","fildName11":null,"fildValue11":null,"fildInline11":"true","fildName12":null,"fildValue12":null,"fildInline12":"true","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:19:35 -> System: Bot is start
+11.02.2023 3:19:43 -> Info: Send Embed. Param -> 
+{"Title":null,"Description":null,"Url":null,"Color":{"R":0,"G":0,"B":0,"A":255,"IsKnownColor":true,"IsEmpty":false,"IsNamedColor":true,"IsSystemColor":false,"Name":"Black"},"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"Filds":[{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"wqr","fildText":"wqr","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"wqr","fildText":"wqr","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"wqr","fildText":"rwq","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false}],"footerText":null,"footerUrl":null,"ChannelId":808345728391970856,"messageID":0,"channelName":"\u0447\u0442\u043E-\u0442\u043E"}
+11.02.2023 3:19:45 -> System: Bot is start
+11.02.2023 3:19:47 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":null,"fildValue1":null,"fildInline1":"false","fildName2":null,"fildValue2":null,"fildInline2":"false","fildName3":"wqr","fildValue3":"wqr","fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":"false","fildName5":"wqr","fildValue5":"wqr","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"false","fildName7":"wqr","fildValue7":"rwq","fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"false","fildName9":null,"fildValue9":null,"fildInline9":"false","fildName10":null,"fildValue10":null,"fildInline10":"false","fildName11":null,"fildValue11":null,"fildInline11":"false","fildName12":null,"fildValue12":null,"fildInline12":"false","footerText":null,"footerUrl":null,"channelId":null}
+03:20:16 Discord     Discord.Net v3.9.0 (API v10)
+03:20:16 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:20:16 Gateway     Connecting
+03:20:18 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:20:18 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:20:18 Gateway     Connected
+03:20:19 Gateway     Ready
+03:20:59 Discord     Discord.Net v3.9.0 (API v10)
+03:20:59 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:20:59 Gateway     Connecting
+03:21:02 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:21:02 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:21:02 Gateway     Connected
+03:21:03 Gateway     Ready
+11.02.2023 3:21:15 -> System: Bot is start
+03:21:43 Discord     Discord.Net v3.9.0 (API v10)
+03:21:43 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:21:43 Gateway     Connecting
+03:21:45 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:21:45 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:21:45 Gateway     Connected
+03:21:46 Gateway     Ready
+11.02.2023 3:21:56 -> System: Bot is start
+11.02.2023 3:22:6 -> Info: Send Embed. Param -> 
+{"Title":null,"Description":null,"Url":null,"Color":{"R":0,"G":0,"B":0,"A":255,"IsKnownColor":true,"IsEmpty":false,"IsNamedColor":true,"IsSystemColor":false,"Name":"Black"},"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"Filds":[{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"214","fildText":"124","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"sdg","fildText":"dsg","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"dsg","fildText":"dsg","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false}],"footerText":null,"footerUrl":null,"ChannelId":808345728391970856,"messageID":0,"channelName":"\u0447\u0442\u043E-\u0442\u043E"}
+11.02.2023 3:22:9 -> System: Bot is start
+11.02.2023 3:22:11 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":null,"fildValue1":null,"fildInline1":null,"fildName2":"214","fildValue2":"124","fildInline2":"true","fildName3":null,"fildValue3":null,"fildInline3":null,"fildName4":"sdg","fildValue4":"dsg","fildInline4":"true","fildName5":null,"fildValue5":null,"fildInline5":null,"fildName6":"dsg","fildValue6":"dsg","fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":null,"fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":null,"fildValue12":null,"fildInline12":null,"footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:22:15 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":null,"fildValue1":null,"fildInline1":null,"fildName2":null,"fildValue2":null,"fildInline2":null,"fildName3":"wqr","fildValue3":"wqr","fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":null,"fildName5":"wqr","fildValue5":"wqr","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":null,"fildName7":"wqr","fildValue7":"rwq","fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":null,"fildValue12":null,"fildInline12":null,"footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:22:20 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"qwr","fildValue1":"qwr","fildInline1":null,"fildName2":null,"fildValue2":null,"fildInline2":null,"fildName3":null,"fildValue3":null,"fildInline3":null,"fildName4":"wqr","fildValue4":"wqr","fildInline4":null,"fildName5":null,"fildValue5":null,"fildInline5":null,"fildName6":"wqr","fildValue6":"wqr","fildInline6":null,"fildName7":null,"fildValue7":null,"fildInline7":null,"fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":null,"fildValue12":null,"fildInline12":null,"footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:22:24 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"124","Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"214","fildValue1":"124","fildInline1":"true","fildName2":null,"fildValue2":null,"fildInline2":"true","fildName3":"214","fildValue3":"214","fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":"true","fildName5":null,"fildValue5":null,"fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"true","fildName9":null,"fildValue9":null,"fildInline9":"true","fildName10":null,"fildValue10":null,"fildInline10":"true","fildName11":null,"fildValue11":null,"fildInline11":"true","fildName12":null,"fildValue12":null,"fildInline12":"true","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:22:28 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"214","Description":"wrq","Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"rw","fildValue1":"qwr","fildInline1":"true","fildName2":"ewt","fildValue2":"ew","fildInline2":"true","fildName3":null,"fildValue3":null,"fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":"true","fildName5":null,"fildValue5":null,"fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"true","fildName9":null,"fildValue9":null,"fildInline9":"true","fildName10":null,"fildValue10":null,"fildInline10":"true","fildName11":null,"fildValue11":null,"fildInline11":"true","fildName12":null,"fildValue12":null,"fildInline12":"true","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:22:31 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"dfg","Description":"fdg","Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"dfg","fildValue1":"fg","fildInline1":"true","fildName2":"dg","fildValue2":"fg","fildInline2":null,"fildName3":"df","fildValue3":"dg","fildInline3":null,"fildName4":"124","fildValue4":"42","fildInline4":"true","fildName5":"214","fildValue5":"124","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"true","fildName9":null,"fildValue9":null,"fildInline9":"true","fildName10":null,"fildValue10":null,"fildInline10":"true","fildName11":null,"fildValue11":null,"fildInline11":"true","fildName12":null,"fildValue12":null,"fildInline12":"true","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:22:34 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"214","Description":null,"Url":null,"Color":null,"Icon":null,"authorName":"124","authorLink":null,"authorIcon":null,"fildName1":"214","fildValue1":"214","fildInline1":null,"fildName2":"214","fildValue2":"214","fildInline2":null,"fildName3":"142","fildValue3":"124","fildInline3":null,"fildName4":null,"fildValue4":null,"fildInline4":null,"fildName5":null,"fildValue5":null,"fildInline5":null,"fildName6":"214","fildValue6":"214","fildInline6":null,"fildName7":null,"fildValue7":null,"fildInline7":null,"fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":"214","fildValue12":"124","fildInline12":null,"footerText":"124","footerUrl":null,"channelId":null}
+11.02.2023 3:22:37 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"qwr","fildValue1":"qwr","fildInline1":null,"fildName2":null,"fildValue2":null,"fildInline2":null,"fildName3":null,"fildValue3":null,"fildInline3":null,"fildName4":"wqr","fildValue4":"wqr","fildInline4":null,"fildName5":null,"fildValue5":null,"fildInline5":null,"fildName6":"wqr","fildValue6":"wqr","fildInline6":null,"fildName7":null,"fildValue7":null,"fildInline7":null,"fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":null,"fildValue12":null,"fildInline12":null,"footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:22:40 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":null,"fildValue1":null,"fildInline1":null,"fildName2":"214","fildValue2":"124","fildInline2":"true","fildName3":null,"fildValue3":null,"fildInline3":null,"fildName4":"sdg","fildValue4":"dsg","fildInline4":"true","fildName5":null,"fildValue5":null,"fildInline5":null,"fildName6":"dsg","fildValue6":"dsg","fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":null,"fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":null,"fildValue12":null,"fildInline12":null,"footerText":null,"footerUrl":null,"channelId":null}
+03:23:52 Discord     Discord.Net v3.9.0 (API v10)
+03:23:52 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:23:52 Gateway     Connecting
+03:23:55 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:23:55 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:23:55 Gateway     Connected
+03:23:56 Gateway     Ready
+11.02.2023 3:24:7 -> System: Bot is start
+11.02.2023 3:24:11 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":null,"fildValue1":null,"fildInline1":"false","fildName2":"214","fildValue2":"124","fildInline2":"true","fildName3":null,"fildValue3":null,"fildInline3":"false","fildName4":"sdg","fildValue4":"dsg","fildInline4":"true","fildName5":null,"fildValue5":null,"fildInline5":"false","fildName6":"dsg","fildValue6":"dsg","fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":"false","fildName8":null,"fildValue8":null,"fildInline8":"false","fildName9":null,"fildValue9":null,"fildInline9":"false","fildName10":null,"fildValue10":null,"fildInline10":"false","fildName11":null,"fildValue11":null,"fildInline11":"false","fildName12":null,"fildValue12":null,"fildInline12":"false","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:24:18 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":null,"fildValue1":null,"fildInline1":"false","fildName2":null,"fildValue2":null,"fildInline2":"false","fildName3":"wqr","fildValue3":"wqr","fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":"false","fildName5":"wqr","fildValue5":"wqr","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"false","fildName7":"wqr","fildValue7":"rwq","fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"false","fildName9":null,"fildValue9":null,"fildInline9":"false","fildName10":null,"fildValue10":null,"fildInline10":"false","fildName11":null,"fildValue11":null,"fildInline11":"false","fildName12":null,"fildValue12":null,"fildInline12":"false","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:24:21 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":"dfg","Description":"fdg","Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"dfg","fildValue1":"fg","fildInline1":"true","fildName2":"dg","fildValue2":"fg","fildInline2":"true","fildName3":"df","fildValue3":"dg","fildInline3":"true","fildName4":null,"fildValue4":null,"fildInline4":"true","fildName5":null,"fildValue5":null,"fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"true","fildName7":null,"fildValue7":null,"fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"true","fildName9":null,"fildValue9":null,"fildInline9":"true","fildName10":null,"fildValue10":null,"fildInline10":"true","fildName11":null,"fildValue11":null,"fildInline11":"true","fildName12":null,"fildValue12":null,"fildInline12":"true","footerText":null,"footerUrl":null,"channelId":null}
+11.02.2023 3:24:22 -> System: Bot is start
+11.02.2023 3:24:29 -> Info: Send Embed. Param -> 
+{"Title":null,"Description":null,"Url":null,"Color":{"R":0,"G":0,"B":0,"A":255,"IsKnownColor":true,"IsEmpty":false,"IsNamedColor":true,"IsSystemColor":false,"Name":"Black"},"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"Filds":[{"fildName":"124","fildText":"214","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"241","fildText":"214","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":"214","fildText":"214","fildInline":true},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false}],"footerText":null,"footerUrl":null,"ChannelId":808345728391970856,"messageID":0,"channelName":"\u0447\u0442\u043E-\u0442\u043E"}
+11.02.2023 3:24:31 -> System: Bot is start
+11.02.2023 3:24:34 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"124","fildValue1":"214","fildInline1":"true","fildName2":null,"fildValue2":null,"fildInline2":"false","fildName3":null,"fildValue3":null,"fildInline3":"false","fildName4":null,"fildValue4":null,"fildInline4":"false","fildName5":"241","fildValue5":"214","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"false","fildName7":"214","fildValue7":"214","fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"false","fildName9":null,"fildValue9":null,"fildInline9":"false","fildName10":null,"fildValue10":null,"fildInline10":"false","fildName11":null,"fildValue11":null,"fildInline11":"false","fildName12":null,"fildValue12":null,"fildInline12":"false","footerText":null,"footerUrl":null,"channelId":null}
+03:25:20 Discord     Discord.Net v3.9.0 (API v10)
+03:25:20 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:25:20 Gateway     Connecting
+03:25:23 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:25:23 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:25:23 Gateway     Connected
+03:25:24 Gateway     Ready
+11.02.2023 3:25:33 -> System: Bot is start
+11.02.2023 3:25:39 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"124","fildValue1":"214","fildInline1":"true","fildName2":null,"fildValue2":null,"fildInline2":"","fildName3":null,"fildValue3":null,"fildInline3":"","fildName4":null,"fildValue4":null,"fildInline4":"","fildName5":"241","fildValue5":"214","fildInline5":"true","fildName6":null,"fildValue6":null,"fildInline6":"","fildName7":"214","fildValue7":"214","fildInline7":"true","fildName8":null,"fildValue8":null,"fildInline8":"","fildName9":null,"fildValue9":null,"fildInline9":"","fildName10":null,"fildValue10":null,"fildInline10":"","fildName11":null,"fildValue11":null,"fildInline11":"","fildName12":null,"fildValue12":null,"fildInline12":"","footerText":null,"footerUrl":null,"channelId":null}
+03:30:42 Discord     Discord.Net v3.9.0 (API v10)
+03:30:42 Discord     A supplied token was invalid.:
+System.ArgumentException: The token contains a whitespace or newline character. Ensure that the token has been properly trimmed. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+03:30:42 Gateway     Connecting
+03:30:45 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:30:45 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:30:45 Gateway     Connected
+03:30:46 Gateway     Ready
+11.02.2023 3:30:59 -> System: Bot is start
+11.02.2023 3:31:3 -> Info: Open Embed. Param -> 
+{"EmbedID":null,"channelName":null,"Title":null,"Description":null,"Url":null,"Color":null,"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"fildName1":"124","fildValue1":"214","fildInline1":null,"fildName2":null,"fildValue2":null,"fildInline2":null,"fildName3":null,"fildValue3":null,"fildInline3":null,"fildName4":null,"fildValue4":null,"fildInline4":null,"fildName5":"241","fildValue5":"214","fildInline5":null,"fildName6":null,"fildValue6":null,"fildInline6":null,"fildName7":"214","fildValue7":"214","fildInline7":null,"fildName8":null,"fildValue8":null,"fildInline8":null,"fildName9":null,"fildValue9":null,"fildInline9":null,"fildName10":null,"fildValue10":null,"fildInline10":null,"fildName11":null,"fildValue11":null,"fildInline11":null,"fildName12":null,"fildValue12":null,"fildInline12":null,"footerText":null,"footerUrl":null,"channelId":null}
+03:33:05 Discord     Discord.Net v3.9.0 (API v10)
+03:33:05 Gateway     Connecting
+03:33:07 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:33:07 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:33:07 Gateway     Connected
+03:33:09 Gateway     Ready
+03:35:01 Discord     Discord.Net v3.9.0 (API v10)
+03:35:01 Gateway     Connecting
+03:35:03 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:35:03 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:35:03 Gateway     Connected
+03:35:04 Gateway     Ready
+11.02.2023 3:35:42 -> System: Create or edit user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"12412","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":null,"Social":null,"Wargaming":null,"ganres":null,"Games":null,"Complete":false,"verified":false}
+11.02.2023 3:35:47 -> System: Updated user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"12412","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"","Social":"","Wargaming":"","ganres":"1241241","Games":"","Complete":false,"verified":false}
+11.02.2023 3:35:49 -> System: Complete user card:
+ Username:P01nt | Z€r0 discord id: 491487830862987266
+11.02.2023 3:35:56 -> Info: Go to page "Tickets"
+11.02.2023 3:35:56 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:35:58 -> Info: Go to page "Tickets"
+11.02.2023 3:35:58 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:35:58 -> Success!:  Success user card:
+ P01nt | Z€r0
+03:41:37 Discord     Discord.Net v3.9.0 (API v10)
+03:41:38 Gateway     Connecting
+03:41:41 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:41:41 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:41:41 Gateway     Connected
+03:41:42 Gateway     Ready
+11.02.2023 3:41:52 -> Info: Go to page "Tickets"
+11.02.2023 3:41:52 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:42:1 -> System: Create or edit user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"214124","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":null,"Social":null,"Wargaming":null,"ganres":null,"Games":null,"Complete":false,"verified":false}
+11.02.2023 3:42:3 -> Info: Go to page "Tickets"
+11.02.2023 3:42:3 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:42:7 -> System: Updated user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"214124","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"","Social":"","Wargaming":"","ganres":"214124","Games":"","Complete":false,"verified":false}
+11.02.2023 3:42:8 -> System: Complete user card:
+ Username:P01nt | Z€r0 discord id: 491487830862987266
+11.02.2023 3:42:10 -> Info: Go to page "Tickets"
+11.02.2023 3:42:10 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:42:11 -> Info: Go to page "Tickets"
+11.02.2023 3:42:11 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:42:11 -> Success!:  Success user card:
+ P01nt | Z€r0
+03:44:30 Discord     Discord.Net v3.9.0 (API v10)
+03:44:30 Gateway     Connecting
+03:44:32 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:44:32 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:44:32 Gateway     Connected
+03:44:33 Gateway     Ready
+11.02.2023 3:44:49 -> System: Create or edit user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"12412","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":null,"Social":null,"Wargaming":null,"ganres":null,"Games":null,"Complete":false,"verified":false}
+11.02.2023 3:44:54 -> System: Updated user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"12412","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"","Social":"","Wargaming":"","ganres":"124124","Games":"","Complete":false,"verified":false}
+11.02.2023 3:44:55 -> System: Complete user card:
+ Username:P01nt | Z€r0 discord id: 491487830862987266
+11.02.2023 3:44:57 -> Info: Go to page "Tickets"
+11.02.2023 3:44:57 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:44:58 -> Info: Go to page "Tickets"
+11.02.2023 3:44:58 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:44:58 -> Success!:  Success user card:
+ P01nt | Z€r0
+03:45:27 Discord     Discord.Net v3.9.0 (API v10)
+03:45:27 Gateway     Connecting
+03:45:30 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:45:30 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:45:30 Gateway     Connected
+03:45:31 Gateway     Ready
+11.02.2023 3:45:40 -> Info: Go to page "Tickets"
+11.02.2023 3:45:40 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:45:43 -> Info: Go to page "Tickets"
+11.02.2023 3:45:43 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:45:52 -> System: Create or edit user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"124","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":null,"Social":null,"Wargaming":null,"ganres":null,"Games":null,"Complete":false,"verified":false}
+11.02.2023 3:45:53 -> Info: Go to page "Tickets"
+11.02.2023 3:45:53 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:45:57 -> System: Updated user card:
+ {"Id":491487830862987266,"Name":"P01nt | Z\u20ACr0","userAutarUrl":"https://cdn.discordapp.com/avatars/491487830862987266/856624b172c41d1b0b34605aff5a01e9.png?size=128","Steam":"124","Epic":"","Origin":"","Xbox":"","Genshin":"","Osu":"","Social":"","Wargaming":"","ganres":"124","Games":"","Complete":false,"verified":false}
+11.02.2023 3:46:1 -> System: Complete user card:
+ Username:P01nt | Z€r0 discord id: 491487830862987266
+11.02.2023 3:46:3 -> Info: Go to page "Tickets"
+11.02.2023 3:46:3 -> Info: Detected fileusers\491487830862987266.json
+03:46:27 Discord     Discord.Net v3.9.0 (API v10)
+03:46:27 Gateway     Connecting
+03:46:30 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:46:30 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:46:30 Gateway     Connected
+03:46:31 Gateway     Ready
+11.02.2023 3:46:44 -> Info: Go to page "Tickets"
+11.02.2023 3:46:44 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:46:45 -> Info: Go to page "Tickets"
+11.02.2023 3:46:45 -> Info: Detected fileusers\491487830862987266.json
+03:48:08 Discord     Discord.Net v3.9.0 (API v10)
+03:48:09 Gateway     Connecting
+03:48:11 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:48:11 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:48:11 Gateway     Connected
+03:48:12 Gateway     Ready
+11.02.2023 3:48:22 -> Info: Go to page "Tickets"
+11.02.2023 3:48:22 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:48:23 -> Info: Go to page "Tickets"
+11.02.2023 3:48:23 -> Info: Detected fileusers\491487830862987266.json
+03:52:18 Discord     Discord.Net v3.9.0 (API v10)
+03:52:18 Gateway     Connecting
+03:52:20 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:52:20 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:52:20 Gateway     Connected
+03:52:21 Gateway     Ready
+11.02.2023 3:52:31 -> Info: Go to page "Tickets"
+11.02.2023 3:52:31 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:52:32 -> Info: Go to page "Tickets"
+11.02.2023 3:52:32 -> Info: Detected fileusers\491487830862987266.json
+03:54:25 Discord     Discord.Net v3.9.0 (API v10)
+03:54:25 Gateway     Connecting
+03:54:27 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:54:27 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:54:27 Gateway     Connected
+03:54:28 Gateway     Ready
+03:55:19 Discord     Discord.Net v3.9.0 (API v10)
+03:55:19 Gateway     Connecting
+03:55:21 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:55:21 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:55:21 Gateway     Connected
+03:55:22 Gateway     Ready
+03:55:43 Discord     Discord.Net v3.9.0 (API v10)
+03:55:43 Gateway     Connecting
+03:55:45 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:55:45 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:55:45 Gateway     Connected
+03:55:46 Gateway     Ready
+03:56:38 Discord     Discord.Net v3.9.0 (API v10)
+03:56:38 Gateway     Connecting
+03:56:40 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:56:40 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:56:40 Gateway     Connected
+03:56:41 Gateway     Ready
+03:57:31 Discord     Discord.Net v3.9.0 (API v10)
+03:57:31 Gateway     Connecting
+03:57:34 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:57:34 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:57:34 Gateway     Connected
+03:57:35 Gateway     Ready
+11.02.2023 3:57:47 -> Info: Go to page "Tickets"
+11.02.2023 3:57:47 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:57:48 -> Info: Go to page "Tickets"
+11.02.2023 3:57:48 -> Info: Detected fileusers\491487830862987266.json
+03:58:23 Discord     Discord.Net v3.9.0 (API v10)
+03:58:23 Gateway     Connecting
+03:58:25 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:58:25 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:58:25 Gateway     Connected
+03:58:26 Gateway     Ready
+11.02.2023 3:58:36 -> Info: Go to page "Tickets"
+11.02.2023 3:58:36 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:58:37 -> Info: Go to page "Tickets"
+11.02.2023 3:58:37 -> Info: Detected fileusers\491487830862987266.json
+03:59:02 Discord     Discord.Net v3.9.0 (API v10)
+03:59:02 Gateway     Connecting
+03:59:04 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:59:04 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:59:04 Gateway     Connected
+03:59:05 Gateway     Ready
+11.02.2023 3:59:17 -> Info: Go to page "Tickets"
+11.02.2023 3:59:17 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 3:59:18 -> Info: Go to page "Tickets"
+11.02.2023 3:59:18 -> Info: Detected fileusers\491487830862987266.json
+03:59:57 Discord     Discord.Net v3.9.0 (API v10)
+03:59:57 Gateway     Connecting
+03:59:59 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:59:59 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+03:59:59 Gateway     Connected
+04:00:00 Gateway     Ready
+11.02.2023 4:0:11 -> Info: Go to page "Tickets"
+11.02.2023 4:0:11 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:0:13 -> Info: Go to page "Tickets"
+11.02.2023 4:0:13 -> Info: Detected fileusers\491487830862987266.json
+04:01:00 Discord     Discord.Net v3.9.0 (API v10)
+04:01:00 Gateway     Connecting
+04:01:01 Gateway     Discord.Net.HttpException: The server responded with error 401: 401: Unauthorized
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendAsync[TResponse](String method, String endpoint, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.GetBotGatewayAsync(RequestOptions options)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+04:01:01 Gateway     Disconnecting
+04:01:01 Gateway     Disconnected
+04:01:02 Gateway     Connecting
+04:01:03 Gateway     Discord.Net.HttpException: The server responded with error 401: 401: Unauthorized
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendAsync[TResponse](String method, String endpoint, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.GetBotGatewayAsync(RequestOptions options)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+04:01:03 Gateway     Disconnecting
+04:01:03 Gateway     Disconnected
+04:01:05 Gateway     Connecting
+04:01:05 Gateway     Discord.Net.HttpException: The server responded with error 401: 401: Unauthorized
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendAsync[TResponse](String method, String endpoint, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.GetBotGatewayAsync(RequestOptions options)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+04:01:05 Gateway     Disconnecting
+04:01:05 Gateway     Disconnected
+04:01:09 Gateway     Connecting
+04:01:09 Gateway     Discord.Net.HttpException: The server responded with error 401: 401: Unauthorized
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendAsync[TResponse](String method, String endpoint, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.GetBotGatewayAsync(RequestOptions options)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+04:01:09 Gateway     Disconnecting
+04:01:09 Gateway     Disconnected
+04:01:25 Discord     Discord.Net v3.9.0 (API v10)
+04:01:25 Gateway     Connecting
+04:01:27 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:01:27 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:01:27 Gateway     Connected
+04:01:28 Gateway     Ready
+11.02.2023 4:1:41 -> Info: Go to page "Tickets"
+11.02.2023 4:1:41 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:1:42 -> Info: Go to page "Tickets"
+11.02.2023 4:1:42 -> Info: Detected fileusers\491487830862987266.json
+04:04:39 Discord     Discord.Net v3.9.0 (API v10)
+04:04:39 Gateway     Connecting
+04:04:41 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:04:41 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:04:42 Gateway     Connected
+04:04:42 Gateway     Ready
+11.02.2023 4:4:52 -> Info: Go to page "Tickets"
+11.02.2023 4:4:52 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:4:54 -> Info: Go to page "Tickets"
+11.02.2023 4:4:54 -> Info: Detected fileusers\491487830862987266.json
+04:05:29 Discord     Discord.Net v3.9.0 (API v10)
+04:05:29 Gateway     Connecting
+04:05:32 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:05:32 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:05:32 Gateway     Connected
+04:05:33 Gateway     Ready
+11.02.2023 4:5:43 -> System: Bot is start
+11.02.2023 4:5:44 -> Info: Go to page "Tickets"
+11.02.2023 4:5:44 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:5:46 -> Info: Go to page "Tickets"
+11.02.2023 4:5:46 -> Info: Detected fileusers\491487830862987266.json
+04:06:07 Discord     Discord.Net v3.9.0 (API v10)
+04:06:07 Gateway     Connecting
+04:06:09 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:06:09 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:06:09 Gateway     Connected
+04:06:10 Gateway     Ready
+11.02.2023 4:6:26 -> Info: Go to page "Tickets"
+11.02.2023 4:6:26 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:6:27 -> Info: Go to page "Tickets"
+11.02.2023 4:6:27 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:6:27 -> Reject!:  User card Removed:
+ P01nt | Z€r0
+04:08:42 Discord     Discord.Net v3.9.0 (API v10)
+04:08:42 Gateway     Connecting
+04:08:44 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:08:44 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:08:44 Gateway     Connected
+04:08:45 Gateway     Ready
+11.02.2023 4:8:55 -> Info: Go to page "Tickets"
+11.02.2023 4:8:55 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:8:58 -> Info: Go to page "Tickets"
+11.02.2023 4:8:58 -> Info: Detected fileusers\491487830862987266.json
+04:09:32 Discord     Discord.Net v3.9.0 (API v10)
+04:09:32 Gateway     Connecting
+04:09:34 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:09:34 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:09:34 Gateway     Connected
+04:09:35 Gateway     Ready
+11.02.2023 4:9:47 -> Info: Go to page "Tickets"
+11.02.2023 4:9:47 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:9:48 -> Info: Go to page "Tickets"
+11.02.2023 4:9:48 -> Info: Detected fileusers\491487830862987266.json
+04:14:11 Discord     Discord.Net v3.9.0 (API v10)
+04:14:11 Gateway     Connecting
+04:14:14 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:14:14 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:14:14 Gateway     Connected
+04:14:15 Gateway     Ready
+11.02.2023 4:14:25 -> Info: Go to page "Tickets"
+11.02.2023 4:14:25 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:14:26 -> Info: Go to page "Tickets"
+11.02.2023 4:14:26 -> Info: Detected fileusers\491487830862987266.json
+04:21:33 Discord     Discord.Net v3.9.0 (API v10)
+04:21:33 Gateway     Connecting
+04:21:36 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:21:36 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:21:36 Gateway     Connected
+04:21:37 Gateway     Ready
+11.02.2023 4:21:47 -> Info: Go to page "Tickets"
+11.02.2023 4:21:47 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:21:48 -> Info: Go to page "Tickets"
+11.02.2023 4:21:48 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:21:49 -> Success!:  Success user card:
+ P01nt | Z€r0
+04:22:23 Discord     Discord.Net v3.9.0 (API v10)
+04:22:23 Gateway     Connecting
+04:22:25 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:22:25 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:22:25 Gateway     Connected
+04:22:26 Gateway     Ready
+11.02.2023 4:22:38 -> Info: Go to page "Tickets"
+11.02.2023 4:22:38 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:22:48 -> Info: Go to page "Tickets"
+11.02.2023 4:22:48 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:22:53 -> Info: Go to page "Logs"
+11.02.2023 4:22:54 -> Info: Go to page "Tickets"
+11.02.2023 4:22:54 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:22:55 -> Info: Go to page "Tickets"
+11.02.2023 4:22:55 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:22:55 -> Success!:  Success user card:
+ P01nt | Z€r0
+04:24:04 Discord     Discord.Net v3.9.0 (API v10)
+04:24:04 Gateway     Connecting
+04:24:07 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:24:07 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:24:07 Gateway     Connected
+04:24:07 Gateway     Ready
+11.02.2023 4:24:18 -> Info: Go to page "Tickets"
+11.02.2023 4:24:18 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:24:20 -> Info: Go to page "Tickets"
+11.02.2023 4:24:20 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:24:20 -> Success!:  Success user card:
+ P01nt | Z€r0
+11.02.2023 4:24:31 -> Info: Go to page "Tickets"
+11.02.2023 4:24:31 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:24:41 -> Info: Go to page "Tickets"
+11.02.2023 4:24:41 -> Info: Detected fileusers\491487830862987266.json
+04:25:21 Discord     Discord.Net v3.9.0 (API v10)
+04:25:21 Gateway     Connecting
+04:25:23 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:25:23 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:25:23 Gateway     Connected
+04:25:24 Gateway     Ready
+11.02.2023 4:25:34 -> Info: Go to page "Tickets"
+11.02.2023 4:25:34 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:25:37 -> Info: Go to page "Tickets"
+11.02.2023 4:25:37 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:25:37 -> Success!:  Success user card:
+ P01nt | Z€r0
+04:26:09 Discord     Discord.Net v3.9.0 (API v10)
+04:26:09 Gateway     Connecting
+04:26:11 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:26:11 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:26:11 Gateway     Connected
+04:26:12 Gateway     Ready
+11.02.2023 4:26:33 -> Info: Go to page "Tickets"
+11.02.2023 4:26:33 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:26:34 -> Info: Go to page "Tickets"
+11.02.2023 4:26:34 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 4:26:34 -> Success!:  Success user card:
+ P01nt | Z€r0
+04:27:51 Discord     Discord.Net v3.9.0 (API v10)
+04:27:51 Gateway     Connecting
+04:27:53 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:27:53 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:27:53 Gateway     Connected
+04:27:54 Gateway     Ready
+11.02.2023 4:28:9 -> Info: Go to page "Tickets"
+11.02.2023 4:28:9 -> Info: Detected fileusers\491487830862987266.json
+04:29:40 Discord     Discord.Net v3.9.0 (API v10)
+04:29:40 Gateway     Connecting
+04:29:42 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:29:42 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:29:42 Gateway     Connected
+04:29:43 Gateway     Ready
+11.02.2023 4:29:54 -> System: Bot is start
+11.02.2023 4:30:20 -> Info: Send Embed. Param -> 
+{"Title":null,"Description":null,"Url":null,"Color":{"R":0,"G":0,"B":0,"A":255,"IsKnownColor":true,"IsEmpty":false,"IsNamedColor":true,"IsSystemColor":false,"Name":"Black"},"Icon":null,"authorName":null,"authorLink":null,"authorIcon":null,"Filds":[{"fildName":"!\u003C491487830862987266\u003E","fildText":"!\u003C491487830862987266\u003E","fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false},{"fildName":null,"fildText":null,"fildInline":false}],"footerText":null,"footerUrl":null,"ChannelId":808345728391970856,"messageID":0,"channelName":"\u0447\u0442\u043E-\u0442\u043E"}
+04:31:07 Discord     Discord.Net v3.9.0 (API v10)
+04:31:07 Gateway     Connecting
+04:31:10 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:31:10 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:31:10 Gateway     Connected
+04:31:11 Gateway     Ready
+11.02.2023 4:31:21 -> System: Bot is start
+04:33:59 Discord     Discord.Net v3.9.0 (API v10)
+04:33:59 Gateway     Connecting
+04:34:02 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:34:02 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+04:34:02 Gateway     Connected
+04:34:03 Gateway     Ready
+16:55:10 Discord     Discord.Net v3.9.0 (API v10)
+16:55:10 Gateway     Connecting
+16:55:13 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+16:55:13 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+16:55:13 Gateway     Connected
+16:55:14 Gateway     Ready
+11.02.2023 16:55:24 -> Info: Go to page "Tickets"
+11.02.2023 16:55:24 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 16:55:34 -> Info: Go to page "Tickets"
+11.02.2023 16:55:34 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 16:55:45 -> Info: Go to page "Tickets"
+11.02.2023 16:55:45 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 16:55:51 -> Info: Go to page "Tickets"
+11.02.2023 16:55:51 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 16:55:54 -> Info: Go to page "Tickets"
+11.02.2023 16:55:54 -> Info: Detected fileusers\491487830862987266.json
+11.02.2023 16:55:54 -> Success!:  Success user card:
+ P01nt | Z€r0
+23:53:29 Discord     Discord.Net v3.9.0 (API v10)
+23:53:29 Discord     A supplied token was invalid.:
+System.ArgumentException: A Bot token must be at least 58 characters in length. Ensure that the Bot Token provided is not an OAuth client secret. (Parameter 'token')
+   at Discord.TokenUtils.ValidateToken(TokenType tokenType, String token)
+   at Discord.Rest.BaseDiscordClient.LoginInternalAsync(TokenType tokenType, String token, Boolean validateToken)
+23:53:29 Gateway     Connecting
+23:53:31 Gateway     Discord.Net.HttpException: The server responded with error 401: 401: Unauthorized
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendAsync[TResponse](String method, String endpoint, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.GetBotGatewayAsync(RequestOptions options)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+23:53:31 Gateway     Disconnecting
+23:53:31 Gateway     Disconnected
+23:53:32 Gateway     Connecting
+23:53:32 Gateway     Discord.Net.HttpException: The server responded with error 401: 401: Unauthorized
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendAsync[TResponse](String method, String endpoint, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.GetBotGatewayAsync(RequestOptions options)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+23:53:32 Gateway     Disconnecting
+23:53:32 Gateway     Disconnected

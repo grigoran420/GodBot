@@ -5,6 +5,7 @@ using Discord.Commands;
 using Discord.Interactions;
 using Discord.Net;
 using Discord.WebSocket;
+using GodBot.Controllers;
 using Newtonsoft.Json;
 
 namespace GodBot
@@ -14,31 +15,81 @@ namespace GodBot
 		static internal DiscordSocketClient _client;
 		public static async void Start()
         {
-			_client = new DiscordSocketClient();
+			var config = new DiscordSocketConfig
+			{
+				GatewayIntents = GatewayIntents.AllUnprivileged | GatewayIntents.GuildMembers
+			};
 
+			/* добавление блядской роли человеку 
+			 * await Action._client.GetGuild(805711346620432384).DownloadUsersAsync();
+			var user1 = Action._client.GetGuild(805711346620432384).GetUser(491487830862987266) as IGuildUser;
+			user1.AddRoleAsync(805712639879151666);
+			*/
+
+			_client = new DiscordSocketClient(config);
 			_client.Log += Logger.Log;
 			CommandService command = new CommandService();
 			command.Log += Logger.Log;
 
 			//  You can assign your bot token to a string, and pass that in to connect.
 			//  This is, however, insecure, particularly if you plan to have your code hosted in a public repository.
-			//var token = "token";//токе бота 
-            var token = "token";//токе бота 
+			var token = "Token";//токе testbot
+			//var token = "Token";//токе cgp 
 
-            // Some alternative options would be to keep your token in an Environment Variable or a standalone file.
-            // var token = Environment.GetEnvironmentVariable("NameOfYourEnvironmentVariable");
-            // var token = File.ReadAllText("token.txt");
-            // var token = JsonConvert.DeserializeObject<AConfigurationClass>(File.ReadAllText("config.json")).Token;
-
-            await _client.LoginAsync(TokenType.Bot, token);
+			// Some alternative options would be to keep your token in an Environment Variable or a standalone file.
+			// var token = Environment.GetEnvironmentVariable("NameOfYourEnvironmentVariable");
+			// var token = File.ReadAllText("token.txt");
+			// var token = JsonConvert.DeserializeObject<AConfigurationClass>(File.ReadAllText("config.json")).Token;
+			_client.PurgeUserCache();
+			await _client.LoginAsync(TokenType.Bot, token);
 			await _client.StartAsync();
-            _client.ButtonExecuted += ButtonHandler;
+            //_client.ButtonExecuted += ButtonHandler;
             _client.ButtonExecuted += NewMember.VerificationButton;
             //_client.Ready += Client_Ready;
 			_client.Ready += NewMember.VerificationHandler;
-            //_client.SlashCommandExecuted += SlashCommandHandler;
-            _client.SlashCommandExecuted += NewMember.SlashCommandHandler;
+			_client.Ready += Roll.SlashCommand;
+			_client.SlashCommandExecuted += Roll.SlashCommandHandler;
+			//_client.SlashCommandExecuted += SlashCommandHandler;
+			_client.SlashCommandExecuted += NewMember.SlashCommandHandler;
 			_client.ModalSubmitted += NewMember.VerifiedModal;
+
+            var embedStart = new EmbedBuilder()
+            {
+                Title = "**Отправьте запрос на создание индивидуальной игровой карточки участника и получите роль __Верифицированного пользователя__**",
+                Description = "Введите в следующую форму ссылку на профиль или никнейм игровых сервисов, которыми пользуетесь. **Профиль Steam и Описание интересов обязательны!** В поля отсутствующих профилей запишите \"Нет\". Для продолжения нажмите кнопку **__Начать__**"
+            };
+            embedStart.Color = Color.Purple;
+            var builderbuttonPage1 = new ComponentBuilder().WithButton("Начать", "Page1", row: 0);
+			Thread.Sleep(10000);
+			//await _client.GetGuild(805711346620432384).GetUser(491487830862987266).AddRoleAsync(805712639879151666);
+
+			List<IReadOnlyCollection<IMessage>> message = new();
+            ulong id = 0;
+            message = await Action._client.GetGuild(805711346620432384)
+                .GetTextChannel(913817793307222076)
+                .GetMessagesAsync(10)
+                .ToListAsync();
+            foreach (var messageItem in message)
+            {
+                foreach (var item in messageItem)
+                {
+                    if (item.Author.Id == 1020045184907620403)
+                    {
+                        id = item.Id;
+                        break;
+                    }
+                }
+            }
+			try
+			{
+				await Action._client.GetGuild(805711346620432384)
+				.GetTextChannel(913817793307222076)
+				.DeleteMessageAsync(id);
+			}catch(Exception ex) { }
+
+            await Action._client.GetGuild(805711346620432384)
+                .GetTextChannel(913817793307222076)
+                .SendMessageAsync(embed: embedStart.Build(), components: builderbuttonPage1.Build());
             /*var builderbutton = new ComponentBuilder()
             .WithButton("пидр", "verification");
             var button = builderbutton.Build();

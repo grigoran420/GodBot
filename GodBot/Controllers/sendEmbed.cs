@@ -5,11 +5,14 @@ using Discord.Interactions;
 using Discord.Interactions.Builders;
 using Discord.Net.Queue;
 using Discord.Net.Rest;
+using Discord.Rest;
 using Discord.WebSocket;
+using GodBot.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace GodBot
@@ -20,44 +23,29 @@ namespace GodBot
 		}
 		EmbedBuilder builder;
 		CommandService commands;
-		public async void Sand(EmbedViewModel model, SocketSlashCommand? command = null)
+		public async void Send(EmbedModel model, SocketSlashCommand? command = null)
 		{
 			EmbedBuilder builder = new EmbedBuilder() 
 			{
-				Title= EmbedModel.Title,
-				Description= EmbedModel.Description,
-				ImageUrl = EmbedModel.Url,
-				Color = new Color(EmbedModel.Color.R, EmbedModel.Color.G, EmbedModel.Color.B),
-				ThumbnailUrl = EmbedModel.Icon,
+				Title= model.Title,
+				Description= model.Description,
+				ImageUrl = model.Url,
+				Color = new Color(model.Color.R, model.Color.G, model.Color.B),
+				ThumbnailUrl = model.Icon,
 				Author = new EmbedAuthorBuilder() 
 				{ 
-					Name = EmbedModel.authorName,
-					Url = EmbedModel.authorLink,
-					IconUrl = EmbedModel.authorIcon,
+					Name = model.authorName,
+					Url = model.authorLink,
+					IconUrl = model.authorIcon,
 				},
 				Footer = new EmbedFooterBuilder()
 				{ 
-					Text = EmbedModel.footerText,
-					IconUrl = EmbedModel.footerUrl
+					Text = model.footerText,
+					IconUrl = model.footerUrl
 				}
 			};
-			List<Fild> filds = new List<Fild>()
-			{
-				new Fild() {fildName = model.fildName1, fildText = model.fildValue1, fildInline = CheckInline(model.fildInline1)},
-				new Fild() {fildName = model.fildName2, fildText = model.fildValue2, fildInline = CheckInline(model.fildInline2)},
-				new Fild() {fildName = model.fildName3, fildText = model.fildValue3, fildInline = CheckInline(model.fildInline3)},
-				new Fild() {fildName = model.fildName4, fildText = model.fildValue4, fildInline = CheckInline(model.fildInline4)},
-				new Fild() {fildName = model.fildName5, fildText = model.fildValue5, fildInline = CheckInline(model.fildInline5)},
-				new Fild() {fildName = model.fildName6, fildText = model.fildValue6, fildInline = CheckInline(model.fildInline6)},
-				new Fild() {fildName = model.fildName7, fildText = model.fildValue7, fildInline = CheckInline(model.fildInline7)},
-				new Fild() {fildName = model.fildName8, fildText = model.fildValue8, fildInline = CheckInline(model.fildInline8)},
-				new Fild() {fildName = model.fildName9, fildText = model.fildValue9, fildInline = CheckInline(model.fildInline9)},
-				new Fild() {fildName = model.fildName10, fildText = model.fildValue10, fildInline = CheckInline(model.fildInline10)},
-				new Fild() {fildName = model.fildName11, fildText = model.fildValue11, fildInline = CheckInline(model.fildInline11)},
-				new Fild() {fildName = model.fildName12, fildText = model.fildValue12, fildInline = CheckInline(model.fildInline12)},
-			};
 
-			foreach (var x in filds)
+			foreach (var x in model.Filds)
 			{
 				if (x.fildName != null & x.fildText != null) 
 				{
@@ -69,8 +57,127 @@ namespace GodBot
 				}
 			}
 
-			Action._client.GetGuild(805711346620432384 /*id гильдиии куда отправляется сообщение*/).GetTextChannel(EmbedModel.ChannelId).SendMessageAsync(embed: builder.Build());
-			//Action._client.GetGuild(791600213424603146 /*id гильдиии куда отправляется сообщение*/).GetTextChannel(EmbedModel.ChannelId).SendMessageAsync(embed: builder.Build());
+			//Action._client.GetGuild(805711346620432384 /*id гильдиии куда отправляется сообщение*/).GetTextChannel(EmbedModel.ChannelId).SendMessageAsync(embed: builder.Build());
+			var UserMessage = await Action._client.GetGuild(805711346620432384 /*id гильдиии куда отправляется сообщение*/)
+				.GetTextChannel(model.ChannelId)
+				.SendMessageAsync(embed: builder.Build());
+			List<IReadOnlyCollection<IMessage>> message = new();
+			ulong id = 0;
+			message = await Action._client.GetGuild(805711346620432384 /*id гильдиии куда отправляется сообщение*/)
+				.GetTextChannel(model.ChannelId)
+				.GetMessagesAsync(10)
+				.ToListAsync();
+			//builder.ThumbnailUrl = "https://i.guim.co.uk/img/media/c2c59285912ea176646bc23d00ca5464aabfecff/0_27_640_384/master/640.jpg?width=620&quality=85&dpr=1&s=none";
+			/*MessageProperties msg= new MessageProperties();
+			Action<MessageProperties> action;
+			msg.Embed = new Optional<Embed>(builder.Build());
+			action = msg.;
+			action.BeginInvoke(msg);*/
+			//model.userMessage = UserMessage;
+			foreach (var messageItem in message)
+			{ 
+				foreach (var item in messageItem)
+				{
+					
+					if (item.Author.Id == 1020045184907620403)
+					{
+						id = item.Id;
+						break;
+					}
+				}
+			}
+			//await Action._client.GetGuild(791600213424603146 /*id гильдиии куда отправляется сообщение*/).GetTextChannel(model.ChannelId).ModifyMessageAsync(id, action);
+			model.messageID = id;
+			using (var f = new FileStream($"Embeds/{id}.json", FileMode.Create)) { f.Close(); };
+			using (var f = new StreamWriter($"Embeds/{id}.json", false)) 
+			{
+				string s = JsonSerializer.Serialize(model);
+				await f.WriteLineAsync(s);
+				Console.WriteLine(s);
+				f.Close(); 
+			};
+
+		}
+
+		public async void EditNow(EmbedModel model, SocketSlashCommand? command = null)
+		{
+			EmbedBuilder builder = new EmbedBuilder()
+			{
+				Title = model.Title,
+				Description = model.Description,
+				ImageUrl = model.Url,
+				Color = new Color(model.Color.R, model.Color.G, model.Color.B),
+				ThumbnailUrl = model.Icon,
+				Author = new EmbedAuthorBuilder()
+				{
+					Name = model.authorName,
+					Url = model.authorLink,
+					IconUrl = model.authorIcon,
+				},
+				Footer = new EmbedFooterBuilder()
+				{
+					Text = model.footerText,
+					IconUrl = model.footerUrl
+				}
+			};
+
+			foreach (var x in model.Filds)
+			{
+				if (x.fildName != null & x.fildText != null)
+				{
+					if (x.fildName.Replace(" ", "") != "" & x.fildText.Replace(" ", "") != "")
+					{
+						builder.AddField(x.fildName, x.fildText, x.fildInline);
+						continue;
+					}
+				}
+			}
+
+			//Action._client.GetGuild(805711346620432384 /*id гильдиии куда отправляется сообщение*/).GetTextChannel(EmbedModel.ChannelId).SendMessageAsync(embed: builder.Build());
+			/*await Action._client.GetGuild(791600213424603146 /*id гильдиии куда отправляется сообщение)
+				.GetTextChannel(model.ChannelId)
+				.SendMessageAsync(embed: builder.Build());*/
+
+			MessageProperties msg = new MessageProperties();
+			Action<MessageProperties> action = null;
+			msg.Embed = new Optional<Embed>(builder.Build());
+			//action.Invoke(msg); 
+
+			await Action._client.GetGuild(805711346620432384).GetTextChannel(model.ChannelId).ModifyMessageAsync(model.messageID, x => x.Embed = builder.Build());
+			ulong id = 0;
+
+			var message = await Action._client.GetGuild(805711346620432384 /*id гильдиии куда отправляется сообщение*/)
+				.GetTextChannel(model.ChannelId)
+				.GetMessagesAsync(10)
+				.ToListAsync();
+			//builder.ThumbnailUrl = "https://i.guim.co.uk/img/media/c2c59285912ea176646bc23d00ca5464aabfecff/0_27_640_384/master/640.jpg?width=620&quality=85&dpr=1&s=none";
+			/*MessageProperties msg= new MessageProperties();
+			Action<MessageProperties> action;
+			msg.Embed = new Optional<Embed>(builder.Build());
+			action = msg.;
+			action.BeginInvoke(msg);*/
+			//model.userMessage = UserMessage;
+			foreach (var messageItem in message)
+			{
+				foreach (var item in messageItem)
+				{
+
+					if (item.Author.Id == 1020045184907620403)
+					{
+						id = item.Id;
+						break;
+					}
+				}
+			}
+			//await Action._client.GetGuild(791600213424603146 /*id гильдиии куда отправляется сообщение*/).GetTextChannel(model.ChannelId).ModifyMessageAsync(id, action);
+			model.messageID = id;
+			using (var f = new StreamWriter($"Embeds/{model.messageID}.json", false))
+			{
+				string s = JsonSerializer.Serialize(model);
+				await f.WriteLineAsync(s);
+				Console.WriteLine(s);
+				f.Close();
+			};
 
 		}
 

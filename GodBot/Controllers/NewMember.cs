@@ -10,21 +10,22 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Text.Json;
 using GodBot.Models;
+using GodBot.Interfaces;
 
 namespace GodBot
 {
-    public class NewMember
+    public class NewMember : ISlashCommand
     {
 
         public static async Task VerificationHandler()
         {
             //var guild = Action._client.GetGuild(791600213424603146);
-            var guild = Action._client.GetGuild(805711346620432384);
+            //var guild = Action._client.GetGuild(805711346620432384);
             var verified = new SlashCommandBuilder();
             verified.WithName("verification").WithDescription("Начало верификации");
             try
             {
-                await guild.CreateApplicationCommandAsync(verified.Build());
+                await Action._client.CreateGlobalApplicationCommandAsync(verified.Build());
             }
             catch (Exception ex)
             {
@@ -48,7 +49,7 @@ namespace GodBot
                 Title = "Игровая карточка участника",
                 CustomId = "Page1",
             };
-            modal.AddTextInput("Steam", "_steam")
+            modal.AddTextInput("Steam", "_steam", required: true)
             .AddTextInput("Epic Games", "_epic", required: false)
             .AddTextInput("Origin", "_origin", required: false)
             .AddTextInput("XBox", "_xBox", required: false)
@@ -92,7 +93,7 @@ namespace GodBot
 
                         var build = new EmbedBuilder();
                         //build.WithAuthor(Action._client.CurrentUser.Username, "https://phonoteka.org/uploads/posts/2021-07/1625657618_33-phonoteka-org-p-anime-art-sneg-krasivo-36.jpg");
-                        build.WithTitle($"Ваша игравая карточка будет выглядеть вот так:\n Игровая карточка участника `@{modal.User.Mention}:`");
+                        build.WithTitle($"Ваша игравая карточка будет выглядеть вот так:\n Игровая карточка участника `@{modal.User.Username}:`");
                         build.WithThumbnailUrl(modal.User.GetAvatarUrl());
 
                         if (user.steam.Replace(" ", "") != "") { build.AddField("Steam", user.steam); 
@@ -237,7 +238,7 @@ namespace GodBot
                         Title = "Игровая карточка участника",
                         CustomId = "Page1",
                     };
-                    modal1.AddTextInput("Steam", "_steam");
+                    modal1.AddTextInput("Steam", "_steam", required: true);
                     modal1.AddTextInput("Epic Games", "_epic", required: false);
                     modal1.AddTextInput("Origin", "_origin", required: false);
                     modal1.AddTextInput("XBox", "_xBox", required: false);
@@ -253,7 +254,7 @@ namespace GodBot
                     modal2.AddTextInput("Osu!", "_osu", required: false);
                     modal2.AddTextInput("Social Club (Rockstar Games)", "_social", required: false);
                     modal2.AddTextInput("Wargaming", "_wargaming", required: false);
-                    modal2.AddTextInput("Жанры, которые интересуют", "_ganres", TextInputStyle.Paragraph);
+                    modal2.AddTextInput("Жанры, которые интересуют", "_ganres", TextInputStyle.Paragraph, required: true);
                     modal2.AddTextInput("Любимые игры", "_games", TextInputStyle.Paragraph, required: false);
                     await component.RespondWithModalAsync(modal2.Build());
                     break;

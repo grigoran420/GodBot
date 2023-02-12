@@ -1,0 +1,106 @@
+﻿@model WebApplication5.Models.EmbedViewModel
+@{
+	Layout = "_Layout";
+}
+
+<div class="flex width-2">
+	<form asp-action="EditEmbed" asp-controller="CreateEmbed">
+		<fieldset>
+			<select id="channelId" asp-for="sendedEmbed" asp-items="Model.sendedEmbed" name="channelId">
+			</select>
+		</fieldset>
+		@using (Html.BeginForm("Index", "CreateEmbed", FormMethod.Post))
+		{
+				<button type="submit" name="action" value="Edit" class="btn btn-outline-success col-1">Edit</button>
+		}
+
+		<h6>Basic Settings </h6>
+		<div><input type="text" asp-for="Title" value="@Model.Title" placeholder="title"></div>
+		<div><textarea type="text" style="width: 200px" asp-for="Description" value="@Model.Description" placeholder="description"> </textarea></div>
+		<div><input type="text" asp-for="Url" value="@Model.Url" placeholder="url"></div>
+		<h6>Color </h6>
+		<div>
+			<input type="color" id="color" asp-for="Color" value=""><br />
+			<div style="height: 10px; width: 10px" id="showcolor">
+			</div>
+		</div>
+		<h6>Thumbnail settings </h6>
+		<div><input type="text" asp-for="Icon" value="@Model.Icon" placeholder="icon"></div>
+		<h6>Author settings </h6>
+		<div><input type="text" asp-for="authorName" value="@Model.authorName" placeholder="author name"></div>
+		<div><input type="text" asp-for="authorLink" value="@Model.authorLink" placeholder="author link"></div>
+		<div><input type="text" asp-for="authorIcon" value="@Model.Icon" placeholder="author icon"></div>
+		<h6>Fields </h6>
+		<div>
+			<div>
+				<input type="text" asp-for="fildName1" value="@Model.fildName1" placeholder="name">
+				<input type="text" asp-for="fildValue1" value="@Model.fildValue1" placeholder="value">
+				<input type="checkbox" asp-for="fildInline1" value="@Model.fildInline1"> Inline
+			</div>
+			<div>
+				<input type="text" asp-for="fildName2" value="@Model.fildName2" placeholder="name">
+				<input type="text" asp-for="fildValue2" value="@Model.fildValue2" placeholder="value">
+				<input type="checkbox" asp-for="fildInline2" value="@Model.fildInline2"> Inline
+			</div>
+			<div>
+				<input type="text" asp-for="fildName3" value="@Model.fildName3" placeholder="name">
+				<input type="text" asp-for="fildValue3" value="@Model.fildValue3" placeholder="value">
+				<input type="checkbox" asp-for="fildInline3" value="@Model.fildInline3"> Inline
+			</div>
+			<div>
+				<input type="text" asp-for="fildName4" value="@Model.fildName4" placeholder="name">
+				<input type="text" asp-for="fildValue4" value="@Model.fildValue4" placeholder="value">
+				<input type="checkbox" asp-for="fildInline4" value="@Model.fildInline4"> Inline
+			</div>
+			<div>
+				<input type="text" asp-for="fildName5" value="@Model.fildName5" placeholder="name">
+				<input type="text" asp-for="fildValue5" value="@Model.fildValue5" placeholder="value">
+				<input type="checkbox" asp-for="fildInline5" value="@Model.fildInline5"> Inline
+			</div>
+			<div>
+				<input type="text" asp-for="fildName6" value="@Model.fildName6" placeholder="name">
+				<input type="text" asp-for="fildValue6" value="@Model.fildValue6" placeholder="value">
+				<input type="checkbox" asp-for="fildInline6" value="@Model.fildInline6"> Inline
+			</div>
+			<div>
+				<input type="text" asp-for="fildName7" value="@Model.fildName7" placeholder="name">
+				<input type="text" asp-for="fildValue7" value="@Model.fildValue7" placeholder="value">
+				<input type="checkbox" asp-for="fildInline7" value="@Model.fildInline7"> Inline
+			</div>
+			<div>
+				<input type="text" asp-for="fildName8" value="@Model.fildName8" placeholder="name">
+				<input type="text" asp-for="fildValue8" value="@Model.fildValue8" placeholder="value">
+				<input type="checkbox" asp-for="fildInline8" value="@Model.fildInline8"> Inline
+			</div>
+			<div>
+				<input type="text" asp-for="fildName9" value="@Model.fildName9" placeholder="name">
+				<input type="text" asp-for="fildValue9" value="@Model.fildValue9" placeholder="value">
+				<input type="checkbox" asp-for="fildInline9" value="@Model.fildInline9"> Inline
+			</div>
+			<div>
+				<input type="text" asp-for="fildName10" value="@Model.fildName10" placeholder="name">
+				<input type="text" asp-for="fildValue10" value="@Model.fildValue10" placeholder="value">
+				<input type="checkbox" asp-for="fildInline10" value="@Model.fildInline10"> Inline
+			</div>
+			<div>
+				<input type="text" asp-for="fildName11" value="@Model.fildName11" placeholder="name">
+				<input type="text" asp-for="fildValue11" value="@Model.fildValue11" placeholder="value">
+				<input type="checkbox" asp-for="fildInline11" value="@Model.fildInline11"> Inline
+			</div>
+			<div>
+				<input type="text" asp-for="fildName12" value="@Model.fildName12" placeholder="name">
+				<input type="text" asp-for="fildValue12" value="@Model.fildValue12" placeholder="value">
+				<input type="checkbox" asp-for="fildInline12" value="@Model.fildInline12"> Inline
+			</div>
+		</div>
+		<h6>Footer settings </h6>
+		<div><input type="text" asp-for="footerText" value="@Model.footerText" placeholder="footer text"></div>
+		<div><input type="text" asp-for="footerUrl" value="@Model.footerUrl" placeholder="footer Image"></div>
+		<h6>Select channel </h6>
+		<fieldset>
+			<select id="channelId" asp-for="channelId" asp-items="Model.channelViewModels" name="channelId">
+			</select>
+		</fieldset>
+		<button type="submit" class="btn btn-outline-success col-1">Send</button>
+	</form>
+</div>

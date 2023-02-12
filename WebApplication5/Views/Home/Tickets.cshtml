@@ -4,6 +4,12 @@
 }
 <div class="flex ">
     @{
+        @if (Model.Count == 0)
+        {
+            <div class="flex">
+                <h1 > Заявок на данный момент нет</h1>
+            </div>
+        }
         @foreach (GodBot.Models.userModel user in Model)
         {
             <div class="gridContainer-1cF_Ic" style="background: #2F3136">
